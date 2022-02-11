@@ -1,0 +1,262 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+    /* Page: Home */
+
+    /* Section: Banner */
+
+    /* Navigation */
+
+    .banner, .artist-index{
+
+        width: 100%;
+        height: 100vh;
+    }
+
+    nav {
+
+        width: 100%;
+        height: 20vh;
+        background-color: aliceblue;
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+
+        display: inline-block;
+        padding: 40px;  
+    }
+
+    .logo {
+
+        text-align: left;
+    }
+
+    h1 {
+
+        text-align: center;
+        margin: auto auto;
+    }
+
+    .banner button, .artist-index button {
+
+        padding: 15px;
+        width: 100px;
+    }
+
+        /* Section: Featured */
+
+            .featured {
+
+                width: 100%;
+                height: 100vh;
+                background-color: antiquewhite;
+            }
+
+            header {
+
+                padding: 40px;
+                text-align: center;
+                font-size: 40px;
+                letter-spacing: 10px;
+            }
+
+            .featured-figure {
+
+                background-color: black;
+                width: 350px;
+                height: 450px;
+                float: left;
+                margin: 0 20px;
+            }
+
+            .featured-img {
+
+                background-color: aquamarine;
+                width: 300px;
+                height: 300px;
+                margin: 25px; 
+            }
+
+            .margin-left {
+
+                margin-left: 110px;
+            }
+
+            .featured-h6 {
+
+                background-color: azure;
+                padding: 10px;
+                width: 200px;
+                margin: 0 auto;
+            }
+
+                /* Section: About */
+
+                .about {
+
+                    width: 100%;
+                    height: 100vh;
+                    background-color: beige;
+                }
+
+                .about-div {
+
+
+                    float: left;
+                }
+
+                .about-div:nth-child(1) {
+
+                    background-color:blanchedalmond;
+                    width: 40%;
+                    height: 100vh;
+                }
+
+                .about-div:nth-child(2) {
+
+                    background-color:bisque;
+                    width: 60%;
+                    height: 100vh;
+                }
+
+                p {
+
+                    margin: 0 30px;
+                    text-align: left;
+                    line-height: 1.6;
+                }
+
+                    /* Section: Sign-in */
+
+                    .sign-in {
+
+                        background-color: burlywood;
+                        width: 100%;
+                        height: 100vh;
+                    }
+
+                    .sign-div {
+
+                        background-color: burlywood;
+                        width: 50%;
+                        height: 100vh;
+                        float: left;
+                    }
+
+                    .sign-div:nth-child(2) {
+
+                        background-color: aliceblue;
+                    }
+
+                    div button {
+
+                        width: 250px;
+                        padding: 10px;
+                        margin: 10px;
+                        top: 50%;
+                    }
+
+                        /* Footer */
+
+                        footer {
+
+                            width: 100%;
+                            height: 60vh;
+                        }
+
+                        footer div {
+
+                            float: left;
+                        }
+
+                        footer div:nth-child(1) {
+
+                            width: 40%;
+                            height: 60vh;
+                            background-color: beige;
+                        }
+
+                        footer div:nth-child(2) {
+
+                            width: 60%;
+                            height: 60vh;
+                            background-color: antiquewhite;
+                        }
+
+                        aside {
+
+                            float:left;
+                            height: 5vh;
+                            width: 100%;
+                            background-color: black;
+                            color: white;
+                            padding-top: 30px;
+                        }
+
+
+    /* Page: Artist */
+
+    /* Artist List */
+
+    .artist-list {
+
+        width: 100%;
+        height: 200vh;
+        background-color: azure;
+        padding-top: 18vh;
+    }
+
+    /* Artist Containers */
+
+    .artist-row {
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .artist-figure {
+
+        float: left;
+        width: 35%;
+        height: 50vh;
+        background-color: gray; 
+        border: 1px solid black;
+    }
+
+    .artist-figure:nth-child(1) {
+
+        margin-right: 40px;
+        margin-bottom: 100px;
+    }
+
+    .artist-figure:nth-child(2) {
+
+        margin-left: 40px;
+        margin-bottom: 100px;
+    }
+
+    /* Divs inside the containers: image / description */
+
+    .artist-image {
+
+        width: 50%;
+        background-color: aliceblue;
+        height: 100%;
+    }
+
+
+        
+
+
+
+
+
+    

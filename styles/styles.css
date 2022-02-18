@@ -162,6 +162,12 @@
                         top: 50%;
                     }
 
+                    .home-button-sign, .home-button-apply {
+
+                        display: block;
+                        margin: 60px auto;
+                    }
+
                         /* Footer */
 
                         footer {

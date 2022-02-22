@@ -688,6 +688,92 @@
             opacity: 0.9;
         }
 
+        /* Forms: Artwork Details, Form Commission for Clients, Form Commission for Artist */
+
+        .center {
+
+            display: block;
+            margin: 20px auto;
+        }
+
+        .center-align-text {
+
+            text-align: center;
+            margin: 20px;
+        }
+
+        .margin-top {
+
+            margin-top: 60px;
+        }
+
+        .color-pink {
+
+            color: pink;
+        }
+
+        p {
+
+            text-align: justify;
+            margin: 0px 40px;
+        }
+
+        .float-left {
+
+            float: left;
+            margin: 0px 0px;
+        }
+
+        .artwork-container {
+
+            width: 60%;
+            height: 100vh;
+            background-color: aliceblue;
+        }
+
+        .primary-color {
+
+            background-color: #36008D;
+        }
+
+        .artwork-details {
+
+            width: 40%;
+            height: 100vh;
+            color: white;
+        }
+
+        /* Form: Form for Clients */
+
+        .half-width {
+
+            width: 50%;
+            height: 100vh;
+            color: white;
+        }
+
+        input[type=text], input[type=email] {
+
+            height: 15px;
+        }
+
+        legend {
+
+            font-size: 20px;
+            margin: 15px;
+        }
+
+        h4.margin-bottom {
+
+            margin-left: 15px;
+        }
+
+        .form-for-client-image {
+
+            width: 400px;
+            height: 400px;
+        }
+
 
 
 

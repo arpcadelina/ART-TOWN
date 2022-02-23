@@ -107,8 +107,7 @@
                 background-color: #36008D;
             }
 
-            .ftitle {
-
+            .fttitle {
                 padding: 40px;
                 text-align: center;
                 font-family: 'Finger Paint', 'cursive';
@@ -127,8 +126,6 @@
             }
 
             .featured-img {
-
-                background-color: aquamarine;
                 width: 300px;
                 height: 300px;
                 margin: 25px; 
@@ -290,9 +287,8 @@
     .artist-list {
 
         width: 100%;
-        height: 200vh;
-        background-color: azure;
-        padding-top: 18vh;
+        background-color: #E2E0E5;
+        padding-top: 100px;
     }
 
     /* Artist Containers */
@@ -310,30 +306,72 @@
         float: left;
         width: 35%;
         height: 50vh;
-        background-color: gray; 
+        background-color: #36008D;
         border: 1px solid black;
     }
 
     .artist-figure:nth-child(1) {
-
         margin-right: 40px;
         margin-bottom: 100px;
     }
 
     .artist-figure:nth-child(2) {
-
         margin-left: 40px;
         margin-bottom: 100px;
     }
 
     /* Divs inside the containers: image / description */
 
-    .artist-image {
-
+    .artist-info {
+        float: left;
         width: 50%;
-        background-color: aliceblue;
         height: 100%;
     }
+
+    .artist-image {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    .artist-img{
+        height: 150px;
+        padding: 50px;
+        padding-bottom: 20px;
+    }
+
+    .artist-h6 {
+        text-align: center;
+        width: 200px;
+        margin: 0 auto;
+        font-family: 'Finger Paint', 'cursive';
+        font-size: 20px;
+        color: white;
+    }
+
+    .artstyle {
+        text-align: left;
+        background-color: #FFB3C1;
+        width: 180px;
+        padding: 5px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        font-family: 'Roboto','sans serif';
+        font-size: 16px;
+        color: black;
+        line-height: 30px;
+    }
+    .rating {
+        text-align: left;
+        background-color: #FFB3C1;
+        width: 180px;
+        padding: 5px;
+        font-family: 'Roboto','sans serif';
+        font-size: 16px;
+        color: black;
+        line-height: 30px;
+    }
+
 
         /* Page: Artwork */
 
@@ -343,7 +381,7 @@
 
             width: 100%;
             height: 550vh;
-            background-color:blanchedalmond;
+            background-color:#36008D;
         }
 
         .digital-arts, .drawing, .painting {

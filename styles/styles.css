@@ -10,69 +10,120 @@
 
     /* Navigation */
 
-    .banner, .artist-index{
+    .banner{
+        background-image:url(../Banner/home.png);
+        background-size: cover;
+    }
+
+    .artist{
+        background-image:url(../Banner/artist.png);
+        background-size: cover;
+    }
+
+    .art{
+        background-image:url(../Banner/art.png);
+        background-size: cover;
+    }
+
+    .logo{
+        height: 100px;
+        padding-right: 50px;
+    }
+
+    .banner, .artist, .art{
 
         width: 100%;
-        height: 100vh;
+        height: 85vh;
     }
 
     nav {
 
         width: 100%;
         height: 20vh;
-        background-color: aliceblue;
         display: flex;  
         justify-content: center;
         align-items: center;
     }
 
-    li {
-
+    .banner li a, .artist li a, .art li a{
+        font-family: 'Roboto', 'sans serif';
+        font-size: 20px;
         display: inline-block;
-        padding: 40px;  
+        list-style: none;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
     }
 
-    .logo {
+    .banner li, .art li, .artist li {
 
-        text-align: left;
+        display: inline-block; 
+        padding: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
-    h1 {
-
-        text-align: center;
-        margin: auto auto;
+    .nav-container{
+        background-color: #36008D;
+        max-width: 1400px;
+        overflow: auto;
     }
 
-    .banner button, .artist-index button {
+    .banner button, .artist button, .art button {
 
         padding: 15px;
         width: 100px;
+        background-color: #FFB3C1;
+        border-color: #36008D;
+        border-radius: 10px;
+        font-family: 'Roboto', 'sans serif';
+        font-size: 20px;
+        color:#36008D;
+        text-decoration: none;
+    }
+
+    .banner li a:hover, .art li a:hover, .artist li a:hover{
+        color: #FFB3C1;
+    }
+
+    .banner button:hover, .artist-index button:hover{
+        background-color:#aa3884;
     }
 
         /* Section: Featured */
+
+            .featured-container{
+                padding-left: 100px;
+                align-self: flex-start;
+                margin-top: 20px;
+                max-width: 1400px;
+                overflow: auto;
+            }
 
             .featured {
 
                 width: 100%;
                 height: 100vh;
-                background-color: antiquewhite;
+                background-color: #36008D;
             }
 
-            header {
+            .ftitle {
 
                 padding: 40px;
                 text-align: center;
-                font-size: 40px;
-                letter-spacing: 10px;
+                font-family: 'Finger Paint', 'cursive';
+                font-size: 50px;
+                letter-spacing: 5px;
+                color: white;
             }
 
             .featured-figure {
 
-                background-color: black;
+                background-color: #FFB3C1;
                 width: 350px;
                 height: 450px;
                 float: left;
-                margin: 0 20px;
+                margin: 0 40px;
             }
 
             .featured-img {
@@ -81,19 +132,17 @@
                 width: 300px;
                 height: 300px;
                 margin: 25px; 
-            }
-
-            .margin-left {
-
-                margin-left: 110px;
+                margin-bottom: 10px;
             }
 
             .featured-h6 {
-
-                background-color: azure;
-                padding: 10px;
+                text-align: center;
+                background-color: #E2E0E5;
+                padding: 3px;
                 width: 200px;
                 margin: 0 auto;
+                font-family: 'Finger Paint', 'cursive';
+                font-size: 15px;
             }
 
                 /* Section: About */
@@ -111,26 +160,33 @@
                     float: left;
                 }
 
-                .about-div:nth-child(1) {
+                .atitle {
 
-                    background-color:blanchedalmond;
+                    padding: 40px;
+                    text-align: center;
+                    font-family: 'Finger Paint', 'cursive';
+                    font-size: 50px;
+                    color: #FFB3C1;
+                }
+
+                .about-div:nth-child(1) {
+                    background-color: #36008D;
                     width: 40%;
                     height: 100vh;
-                }
-
-                .about-div:nth-child(2) {
-
-                    background-color:bisque;
-                    width: 60%;
-                    height: 100vh;
-                }
-
-                p {
-
-                    margin: 0 30px;
+                    font-family: 'Roboto','sans serif';
+                    font-size: 17px;
+                    color: white;
                     text-align: left;
                     line-height: 1.6;
                 }
+
+                .about-div:nth-child(2) {
+                    width: 60%;
+                    height: 100vh;
+                    background-image: url(../Other/aboutus.png);
+                    background-size: cover;
+                }
+
 
                     /* Section: Sign-in */
 
@@ -142,28 +198,32 @@
                     }
 
                     .sign-div {
-
-                        background-color: burlywood;
+                        padding-top: 250px;
                         width: 50%;
-                        height: 100vh;
+                        height: 78vh;
                         float: left;
                     }
 
+                    .sign-div:nth-child(1) {
+                        background-image: url(../Other/artist.png);
+                        background-size: contain;
+                    }
+
                     .sign-div:nth-child(2) {
-
-                        background-color: aliceblue;
+                        background-image: url(../Other/commissioner.png);
+                        background-size: contain;
                     }
 
-                    div button {
-
+                    .sign-in button {
                         width: 250px;
-                        padding: 10px;
-                        margin: 10px;
                         top: 50%;
-                    }
-
-                    .home-button-sign, .home-button-apply {
-
+                        padding: 15px;
+                        background-color: #FFB3C1;
+                        border-color: #36008D;
+                        border-radius: 10px;
+                        font-family: 'Roboto', 'sans serif';
+                        font-size: 20px;
+                        color:#36008D;
                         display: block;
                         margin: 60px auto;
                     }
@@ -181,19 +241,36 @@
                             float: left;
                         }
 
-                        footer div:nth-child(1) {
+                        .ftitle{
+                            padding: 10px;
+                            text-align: left;
+                            font-family: 'Finger Paint', 'cursive';
+                            font-size: 50px;
+                            color: #FFB3C1;
+                        }
 
+                        footer div:nth-child(1) {
                             width: 40%;
                             height: 60vh;
-                            background-color: beige;
+                            background-color:#36008D;
                         }
 
                         footer div:nth-child(2) {
-
                             width: 60%;
                             height: 60vh;
-                            background-color: antiquewhite;
+                            background-color: #36008D;
+                            font-family: 'Roboto','sans serif';
+                            font-size: 20px;
+                            color: white;
+                            text-align: left;
+                            line-height: 3;
                         }
+
+                        .flogo{
+                            height: 250px;
+                            padding: 150px;
+                            padding-top: 50px;
+                        }           
 
                         aside {
 
@@ -202,7 +279,7 @@
                             width: 100%;
                             background-color: black;
                             color: white;
-                            padding-top: 30px;
+                            padding-top: 10px;
                         }
 
 
@@ -773,9 +850,3 @@
             width: 400px;
             height: 400px;
         }
-
-
-
-
-
-    

@@ -1,5 +1,4 @@
 * {
-
     margin: 0;
     padding: 0;
 }
@@ -31,13 +30,11 @@
     }
 
     .banner, .artist, .art{
-
         width: 100%;
         height: 85vh;
     }
 
     nav {
-
         width: 100%;
         height: 20vh;
         display: flex;  
@@ -56,7 +53,6 @@
     }
 
     .banner li, .art li, .artist li {
-
         display: inline-block; 
         padding: 15px;
         padding-left: 40px;
@@ -70,7 +66,6 @@
     }
 
     .banner button, .artist button, .art button {
-
         padding: 15px;
         width: 100px;
         background-color: #FFB3C1;
@@ -86,22 +81,22 @@
         color: #FFB3C1;
     }
 
-    .banner button:hover, .artist-index button:hover{
+    .banner button:hover, .artist button:hover, .art button:hover, .sign-in button:hover{
         background-color:#aa3884;
     }
 
         /* Section: Featured */
-
+            /*container without border*/
             .featured-container{
-                padding-left: 100px;
+                padding-left: 110px;
                 align-self: flex-start;
                 margin-top: 20px;
                 max-width: 1400px;
                 overflow: auto;
             }
 
-            .featured {
 
+            .featured {
                 width: 100%;
                 height: 100vh;
                 background-color: #36008D;
@@ -116,13 +111,14 @@
                 color: white;
             }
 
+            /*polaroid pink*/
             .featured-figure {
-
                 background-color: #FFB3C1;
                 width: 350px;
                 height: 450px;
                 float: left;
                 margin: 0 40px;
+                margin-bottom: 20px;
             }
 
             .featured-img {
@@ -188,8 +184,6 @@
                     /* Section: Sign-in */
 
                     .sign-in {
-
-                        background-color: burlywood;
                         width: 100%;
                         height: 100vh;
                     }
@@ -223,18 +217,17 @@
                         color:#36008D;
                         display: block;
                         margin: 60px auto;
+                        
                     }
 
-                        /* Footer */
+                        /* Violet Footer */
 
                         footer {
-
                             width: 100%;
                             height: 60vh;
                         }
 
                         footer div {
-
                             float: left;
                         }
 
@@ -246,13 +239,13 @@
                             color: #FFB3C1;
                         }
 
-                        footer div:nth-child(1) {
+                        .socmeds {
                             width: 40%;
                             height: 60vh;
                             background-color:#36008D;
                         }
 
-                        footer div:nth-child(2) {
+                        .links {
                             width: 60%;
                             height: 60vh;
                             background-color: #36008D;
@@ -277,6 +270,33 @@
                             background-color: black;
                             color: white;
                             padding-top: 10px;
+                        }
+
+                        /* Pink Footer */
+
+                        .ptitle{
+                            padding: 10px;
+                            text-align: left;
+                            font-family: 'Finger Paint', 'cursive';
+                            font-size: 50px;
+                            color: #36008D;
+                        }
+
+                        .psocmeds {
+                            width: 40%;
+                            height: 60vh;
+                            background-color:#FFB3C1;
+                        }
+
+                        .plinks {
+                            width: 60%;
+                            height: 60vh;
+                            background-color: #FFB3C1;
+                            font-family: 'Roboto','sans serif';
+                            font-size: 20px;
+                            color: black;
+                            text-align: left;
+                            line-height: 3;
                         }
 
 
@@ -354,8 +374,8 @@
         background-color: #FFB3C1;
         width: 180px;
         padding: 5px;
-        margin-top: 50px;
-        margin-bottom: 40px;
+        margin-top: 35px;
+        margin-bottom: 30px;
         font-family: 'Roboto','sans serif';
         font-size: 16px;
         color: black;
@@ -378,45 +398,46 @@
         /* Digital Art List */
 
         .artwork-list {
-
             width: 100%;
-            height: 550vh;
+            overflow: auto;
             background-color:#36008D;
+            padding-bottom: 30px;
         }
 
-        .digital-arts, .drawing, .painting {
-
-            width: 100%;
-            height: 200vh;    
-            border: 0px solid black;
+        /*container with border*/
+        .border-container{
+            padding: 20px;
+            padding-left: 30px;
+            padding-right: 0px;
+            margin-top: 30px;
+            margin-left: 80px;
+            margin-right:80px;
+            align-self: flex-start;
+            max-width: 1400px;
+            border: 5px solid #00C9B8;
+            overflow: auto;
         }
 
-        .digital-arts-card {
-
-            width: 380px;
-            height: 75vh;
-            float: left;
-            margin: 20px 20px 20px 40px;
-            background-color: aliceblue;
-            border: 1px solid black;
+        .title {
+            text-align: left;
+            padding-bottom: 10px;
+            font-family: 'Finger Paint', 'cursive';
+            font-size: 50px;
+            letter-spacing: 5px;
+            color: #00C9B8;
         }
 
-        .page-artwork-image {
-
-            width: 350px;
-            height: 50vh;
-            margin-left: 15px;
-            margin-top: 20px;
-        }
-
-        .art-title, .artist-num, .art-price {
-
-            width: 300px;
-            height: 30px;
-            background-color:aqua;
-            margin: 5px auto;
+        .art-h7{
             text-align: center;
+            background-color: #E2E0E5;
+            padding: 3px;
+            width: 200px;
+            margin: 7px auto;
+            font-family: 'Roboto','sans serif';
+            font-size: 15px;
         }
+
+        
 
             /* Page: Commission */
 
@@ -624,8 +645,6 @@
                                 font-size: 20px;
                                 margin: 10px;
                             }
-
-
 
 
                                 /* Commission List Contents */

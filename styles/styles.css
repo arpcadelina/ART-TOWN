@@ -81,7 +81,8 @@
         color: #FFB3C1;
     }
 
-    .banner button:hover, .artist button:hover, .art button:hover, .sign-in button:hover{
+    .banner button:hover, .artist button:hover, .art button:hover, .sign-in button:hover, 
+    .commission-row button:hover, .log-in-btn:hover {
         background-color:#aa3884;
     }
 
@@ -102,6 +103,7 @@
                 background-color: #36008D;
             }
 
+            /*white title-center*/
             .fttitle {
                 padding: 40px;
                 text-align: center;
@@ -136,6 +138,7 @@
                 margin: 0 auto;
                 font-family: 'Finger Paint', 'cursive';
                 font-size: 15px;
+                color: black;
             }
 
                 /* Section: About */
@@ -153,6 +156,7 @@
                     float: left;
                 }
 
+                /*pink title-center*/
                 .atitle {
 
                     padding: 40px;
@@ -215,8 +219,8 @@
                         font-family: 'Roboto', 'sans serif';
                         font-size: 20px;
                         color:#36008D;
-                        display: block;
                         margin: 60px auto;
+                        margin-left: 240px;
                         
                     }
 
@@ -231,6 +235,7 @@
                             float: left;
                         }
 
+                        /*pink title-left*/
                         .ftitle{
                             padding: 10px;
                             text-align: left;
@@ -274,6 +279,7 @@
 
                         /* Pink Footer */
 
+                        /*violet title-left*/
                         .ptitle{
                             padding: 10px;
                             text-align: left;
@@ -418,6 +424,7 @@
             overflow: auto;
         }
 
+        /*aqua title-left*/
         .title {
             text-align: left;
             padding-bottom: 10px;
@@ -435,6 +442,7 @@
             margin: 7px auto;
             font-family: 'Roboto','sans serif';
             font-size: 15px;
+            color: black;
         }
 
         
@@ -442,131 +450,146 @@
             /* Page: Commission */
 
             .section-commission {
-
                 width: 100%;
-                height: 221vh;
-                background-color:blanchedalmond
+                overflow: auto;
+                background-color:#E2E0E5;
+                padding-bottom: 30px;
 
-            }
-
-            .commission-list {
-
-                border: 0px solid black;
-            }
-
-            .commission-row {
-
-                width: 100%;
-                height: 100vh;
-                border: 0px solid black;
-            
             }
 
             .commission-card {
-
                 width: 70%;
-                height: 30vh;
+                height: 25vh;
                 float: left;
-                margin: 70px 20px 20px 20px;
-                background-color: azure;
-                
+                margin: 20px 20px 20px 20px;
+                border: 3px solid #36008D;
+                padding: 20px;
             }
 
             .commission-row button {
-
                 width: 20%;
-                height: 30vh;
-                margin: 70px 20px 20px 20px;
+                height: 32vh;
+                margin: 18px 20px 20px 20px;
+                padding: 15px;
+                background-color: #FFB3C1;
+                border-color: #36008D;
+                border-radius: 10px;
+                font-family: 'Roboto', 'sans serif';
                 font-size: 25px;
+                color:#36008D;
             }
 
-            .commission-card .commission-name {
-
+            .commission-h3 {
                 float: left;
+                font-family: 'Roboto','sans serif';
+                font-size: 17px;
+                color: black;
             }
 
-            .commission-card .done-label {
-
+            .done-label {
                 float: right;
-            }
-
-    
-
-            .art-name {
-
-                margin-left: 30px;
+                font-family: 'Roboto','sans serif';
+                font-size: 17px;
+                color: #36008D;
             }
 
                 /* Page: Sign-In */
 
 
 
-                .sign-in-image {
-
-                    width: 60%;
+                .sign-in-artist {
+                    width: 50%;
                     height: 100vh;
-                    background-color:bisque;
                     float: left;
+                    background-image: url(../Other/artist.png);
+                    background-size: cover;
+                }
+
+                .sign-in-client {
+                    width: 50%;
+                    height: 100vh;
+                    float: left;
+                    background-image: url(../Other/commissioner.png);
+                    background-size: cover;
                 }
 
                 .log-in-form {
-
-                    width: 40%;
+                    width: 50%;
                     height: 100vh;
                     float: left;
+                    background-color: #36008D;
                 }
 
                 .log-in-logo {
-
-                    width: 100px;
-                    height: 100px;
+                    width: 120px;
+                    height: 120px;
                     display: block;
-                    margin: 20px auto;
+                    margin: 15px auto;
                 }
 
-                h2 {
-
+                /*small title-pink-center*/
+                .small-title {
                     text-align: center;
-                    font-size: 30px;
-                    margin: 10px 0px;
+                    font-family: 'Finger Paint', 'cursive';
+                    font-size: 35px;
+                    letter-spacing: 5px;
+                    color: #FFB3C1;
+                    margin: 0px 0px;
                 }
 
                 form {
-
-                    margin: 30px;
+                    margin: 40px;
+                    margin-left: 150px;
                 }
 
-                form label, form input {
-
+                form label {
                     width: 450px;
-                    font-size: 20px;
-                    margin: 15px;
-                    
+                    font-family: 'Roboto','sans serif';
+                    font-size: 25px;
+                    color: white;
+                    margin-bottom: 5px;
                 }
 
                 form input {
-
+                    width: 450px;
                     border: 0;
-                    border-bottom: 1px solid violet;
+                    border-bottom: 1px solid #FFB3C1;
+                    background-color: #36008D;
                     height: 25px;
+                    font-family: 'Roboto','sans serif';
                     font-size: 14px;
+                    color: white;
                     padding: 5px;
                 }
 
                 form input:hover, form input:active {
-
-                    border: 1px solid violet;
+                    border: 1px solid #FFB3C1;
                 }
 
                 .log-in-btn {
-
-                    display: block;
                     margin: 20px auto;
+                    width: 520px;
+                    top: 50%;
+                    padding: 10px;
+                    background-color: #FFB3C1;
+                    border-color: #36008D;
+                    border-radius: 10px;
+                    font-family: 'Roboto', 'sans serif';
+                    font-size: 20px;
+                    color:#36008D;
+                    margin-left: 130px;
                 }
 
                 .account-prompt {
-
                     text-align: center;
+                    font-family: 'Roboto','sans serif';
+                    font-size: 20px;
+                    color: white;
+                }
+
+                .account-prompt a{
+                    text-decoration: none;
+                    color: #FFB3C1;
                 }
     
                 

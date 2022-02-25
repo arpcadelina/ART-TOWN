@@ -2,7 +2,7 @@
 <html>
     <head>
         <title> Art Town - Feedback Form</title>
-
+        <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link href="../styles/styles.css" type="text/css" rel="stylesheet"/>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +10,20 @@
     <body>
         <section class="form-feedback-section">
             <div class="feedback-div">
-                <header class="left remove-padding"> Feedback Form </header>
-                <h2 class="form-artwork-title form-margin-left left"> Artwork Title 1 </h2>
-                <h5 class="form-margin-left"> P 10, 000.00</h5>
+                <header class="ftitle"> Feedback Form </header>
+                <h2 class="small-title"> Artwork Title 1 </h2>
+                <h5 class="roboto-title"> P2,000.00</h5>
 
                 <form class="feedback">
-                    <label for="name" class="lower-font"> Name </label><br>
-                        <input type="text" id="name" class="height margin-bottom"/><br>
+                    <label for="name"> Name </label><br>
+                        <input type="text" id="name"/><br><br>
 
-                    <label for="rate" class="lower-font"> How did your artist do? Rate the art. </label>
+                    <label for="rate"> How did your artist do? Rate the art. </label>
                         <div>
                             <div class="label-div">
-                                <h5 class="rating-label label-left"> Poor </h5>
-                                <h5 class="rating-label label-right"> Fair </h5>
-                            </div><br><br>
+                                <p class="label-left"> Poor </p>
+                                <p class="label-right"> Excellent </p>
+                            </div><br>
                             <div class="button-div">
                                 <button class="button-rating"> 1 </button><!---->
                                 <button class="button-rating"> 2 </button><!---->
@@ -31,13 +31,12 @@
                                 <button class="button-rating"> 4 </button><!---->
                                 <button class="button-rating"> 5 </button><!---->
                             </div>
-                        </div><br><br>
+                        </div><br>
 
-                    <label class="lower-font"> Please share your feedback: </label><br>
-                    <textarea rows="6" cols="75">
-    
-                    </textarea><br>
+                    <label for="feedback-details"> Please share your feedback: </label><br>
+                    <textarea> </textarea><br>
                 </form>
+                    <a href="3commissionlist.html"><button class="long-btn"><b> Submit </b></button></a>
             </div>
             <div class="feedback-img">
 

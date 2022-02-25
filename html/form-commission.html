@@ -2,7 +2,7 @@
 <html>
     <head>
         <title> Art Town - Commission Form </title>
-
+        <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link href="../styles/styles.css" type="text/css" rel="stylesheet"/>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,33 +10,35 @@
     <body>
         <section class="form-commission">
             <div class="form-commission-div">
-                <header class="left remove-padding"> Commission Form</header>
-                <h2 class="form-artwork-title form-margin-left left"> Artwork Title 1 </h2>
-                <h5 class="form-margin-left"> P 10, 000.00</h5>
+                <header class="ftitle"> Commission Form</header>
+                <h2 class="small-title"> Artwork Title 1 </h2>
+                <h5 class="roboto-title"> P2,000.00</h5>
     
                 <form class="commission">
-                    <label for="name" class="lower-font"> Name </label><br>
-                        <input type="text" id="name" class="height"/><br>
+                    <label for="name"> Name </label><br>
+                        <input type="text" id="name" /><br><br>
     
-                    <label for="email" class="lower-font"> Email </label><br>
-                        <input type="email" id="email" class="height"/><br>
+                    <label for="email"> Email </label><br>
+                        <input type="email" id="email" /><br><br>
     
-                    <label for="contact" class="lower-font"> Contact Number </label><br>
-                        <input type="text" id="contact" class="height"/><br>
+                    <label for="contact"> Contact Number </label><br>
+                        <input type="text" id="contact" /><br><br>
     
-                    <label for="address" class="lower-font"> Address </label><br>
-                        <input type="text" id="address" class="height"/><br>
+                    <label for="address"> Address </label><br>
+                        <input type="text" id="address"/><br><br>
     
-                    <label for="details" class="lower-font"> Additional Details </label><br>
-                        <textarea rows="6" cols="50">
-    
-                        </textarea><br>
+                    <label for="details"> Additional Details </label><br>
+                        <textarea> </textarea><br><br>
                 </form>
             </div>
             <div class="form-upload-div">
-                    <input type="file" id="file-upload"/>
-                    <button class="submit-btn"> Submit </button><br>
-                    <button class="back-btn"> Back</button>
+                <label for="file-upload" class="custom-file-upload">
+                    <b>+</b><br><br>
+                    CHOOSE FILE
+                </label>
+                <input id="file-upload" type="file"/>
+                <a href="collage-view.html"><button class="log-in-btn"><b> Submit </b></button></a>
+                <a href="collage-view.html"><button class="log-in-btn"><b> Back</button></b></a>
             </div>
         </section>
     </body>

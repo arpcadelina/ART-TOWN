@@ -65,6 +65,7 @@
         overflow: auto;
     }
 
+    /*little button*/
     .banner button, .artist button, .art button {
         padding: 15px;
         width: 100px;
@@ -82,8 +83,8 @@
     }
 
     .banner button:hover, .artist button:hover, .art button:hover, .sign-in button:hover, 
-    .commission-row button:hover, .log-in-btn:hover {
-        background-color:#aa3884;
+    .commission-row button:hover, .log-in-btn:hover, .long-btn:hover, .button-rating:hover {
+        opacity: 0.7;
     }
 
         /* Section: Featured */
@@ -151,8 +152,6 @@
                 }
 
                 .about-div {
-
-
                     float: left;
                 }
 
@@ -170,11 +169,6 @@
                     background-color: #36008D;
                     width: 40%;
                     height: 100vh;
-                    font-family: 'Roboto','sans serif';
-                    font-size: 17px;
-                    color: white;
-                    text-align: left;
-                    line-height: 1.6;
                 }
 
                 .about-div:nth-child(2) {
@@ -209,6 +203,7 @@
                         background-size: contain;
                     }
 
+                    /*medium button*/
                     .sign-in button {
                         width: 250px;
                         top: 50%;
@@ -525,6 +520,7 @@
                     height: 120px;
                     display: block;
                     margin: 15px auto;
+                    margin-bottom: -25px;
                 }
 
                 /*small title-pink-center*/
@@ -534,15 +530,16 @@
                     font-size: 35px;
                     letter-spacing: 5px;
                     color: #FFB3C1;
-                    margin: 0px 0px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
                 }
 
-                form {
+                .sign {
                     margin: 40px;
                     margin-left: 150px;
                 }
 
-                form label {
+                .log-in-form label {
                     width: 450px;
                     font-family: 'Roboto','sans serif';
                     font-size: 25px;
@@ -550,7 +547,7 @@
                     margin-bottom: 5px;
                 }
 
-                form input {
+                .log-in-form input {
                     width: 450px;
                     border: 0;
                     border-bottom: 1px solid #FFB3C1;
@@ -566,6 +563,7 @@
                     border: 1px solid #FFB3C1;
                 }
 
+                /*big long button*/
                 .log-in-btn {
                     margin: 20px auto;
                     width: 520px;
@@ -580,6 +578,16 @@
                     margin-left: 130px;
                 }
 
+                .how {
+                    text-align: left;
+                    font-family: 'Roboto','sans serif';
+                    font-size: 20px;
+                    color: white;
+                    padding-left: 120px;
+                    margin-top: -20px;
+                    line-height: 30px;
+                }
+
                 .account-prompt {
                     text-align: center;
                     font-family: 'Roboto','sans serif';
@@ -591,9 +599,217 @@
                     text-decoration: none;
                     color: #FFB3C1;
                 }
-    
-                
-                    /* Page: Profile */
+
+     /* Collage Artwork Details */
+
+     .artwork-container {
+        width: 60%;
+        height: 100vh;
+        float: left;
+        margin: 0px 0px;
+        background-image: url(../Collage/PT1.png);
+        background-size: contain;
+    }
+
+    .artwork-details {
+        width: 40%;
+        height: 100vh;
+        float: right;
+        background-color: #36008D;
+        height: 100vh;
+    }
+
+    /*for descriptions w/ big paddings - left*/
+    .art-description{
+        font-family: 'Roboto','sans serif';
+        font-size: 17px;
+        color: white;
+        text-align: left;
+        line-height: 1.6;
+        padding: 30px;
+        padding-top: 5px;
+    }
+
+    /*for title - roboto - center*/
+    .roboto-title{
+        font-family: 'Roboto','sans serif';
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    /*long button*/
+    .long-btn{
+        margin: 10px auto;
+        width: 400px;
+        padding: 5px;
+        background-color: #FFB3C1;
+        border-color: #36008D;
+        border-radius: 10px;
+        font-family: 'Roboto', 'sans serif';
+        font-size: 20px;
+        color:#36008D;
+        margin-left: 120px;
+        margin-top: 20px
+    }
+
+    /* Form: Form for Clients */
+
+    .half:nth-child(1){
+        width: 50%;
+        height: 100vh;
+        background-color: #36008D;
+        float: left;
+    }
+
+    .half:nth-child(2){
+        width: 50%;
+        height: 100vh;
+        background-color: #36008D;
+        float: left;
+    }
+
+    .image-from-client {
+        margin-left: 50px;
+        margin-top: 20px;
+        width: 500px;
+        height: 400px;
+        background-image: url(../Collage/PT3.png);
+        background-size: contain;
+    }
+
+    /*for descriptions w/ little paddings - left*/
+    .little-description{
+        font-family: 'Roboto','sans serif';
+        font-size: 17px;
+        color: white;
+        text-align: left;
+        padding: 7px;
+        padding-left:30px;
+    }
+
+    /* Form: Commission */
+
+    .form-commission-div, .form-upload-div{
+        width: 50%;
+        float: left;
+        height: 100vh;
+        background-color: #36008D;
+    }
+
+
+    input[type=file] {
+        display: none;
+    }
+
+    .custom-file-upload {
+        width: 80%;
+        background-color: #E2E0E5;
+        border: 1px solid black;
+        display: block;
+        margin: 40px auto;
+        cursor: pointer;
+        font-family: 'Roboto','sans serif';
+        font-size: 20px;
+        color: black;
+        text-align:center;
+        padding: 30px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    .custom-file-upload b{
+        font-size: 50px;
+    }
+
+        /* Form: Feedback */
+
+    .feedback label, .commission label {
+        width: 492px;
+        font-family: 'Roboto','sans serif';    
+        font-size: 20px;    
+        color: white;    
+        margin-bottom: 10px;
+        margin-left: 50px;        
+    }
+
+    .feedback input, .commission input{
+        width: 492px;
+        border: 0;
+        border-bottom: 1px solid #FFB3C1;
+        background-color: #36008D;
+        height: 25px;
+        font-family: 'Roboto','sans serif';
+        font-size: 14px;
+        color: white;
+        padding: 5px;
+        margin-left: 50px; 
+    }
+
+    form textarea{
+        width: 492px;
+        height: 100px;
+        margin-left: 50px;
+        border: 1px solid #FFB3C1;
+        background-color: #36008D;
+        font-family: 'Roboto','sans serif';
+        font-size: 12px;
+        color: white;
+        padding: 5px;
+    }
+
+    .feedback-div{
+        width: 50%;
+        height: 100vh;
+        background-color: #36008D;
+        float: left;
+    }
+
+    .feedback-img {
+        width: 50%;
+        height: 100vh;
+        background-image: url(../Other/Feedback.png);
+        background-size: cover;
+        float: left;
+    }
+
+    .label-left {
+        float: left;
+        font-family: 'Roboto','sans serif';    
+        font-size: 20px;    
+        color: white;    
+        margin:20px;
+        margin-left: 50px;     
+    }
+
+    .label-right {
+        float: right;
+        font-family: 'Roboto','sans serif';    
+        font-size: 20px;    
+        color: white;    
+        margin:20px;
+        margin-right: 220px;     
+    }
+
+        /* Button Rating */
+
+        .button-div {
+            margin-left: 50px; 
+            display: inline-block;
+            font-size: 0px;
+        }
+
+        .button-rating {
+            width: 100px;
+            height: 60px;
+            background-color: #FFB3C1;
+            font-family: 'Roboto','sans serif';
+            font-size: 16px;
+            color: black;
+        }
+
+         /* Page: Profile */
 
                     /* Banner Section */
 
@@ -696,237 +912,3 @@
 
                                     margin-left: 15px;
                                 }
-
-    /* Form: Commission */
-
-    .form-commission {
-
-        color: white;
-    }
-
-    header.left, h2.left {
-
-        color: pink;
-    }
-
-    .form-commission-div, .form-upload-div {
-
-        width: 50%;
-        float: left;
-        height: 100vh;
-    }
-
-    .form-commission-div {
-
-        background-color: #36008D;
-    }
-
-    .form-upload-div {
-
-        background-color: #36008D;
-    }
-
-    input {
-
-        color: white;
-    }
-
-    .left {
-
-        text-align: left;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    
-    .form-margin-left {
-
-        margin-left: 40px;
-    }
-
-    .remove-padding {
-
-        padding-bottom: 10px;
-    }
-
-    .height {
-
-        height: 20px;
-        background-color: #36008D;
-    }
-
-    .lower-font {
-
-        font-size: 16px;
-    }
-
-    textarea {
-
-        margin: 10px 10px 10px 15px;
-        background-color: #36008D;
-    }
-
-    input[type=file] {
-
-        width: 80%;
-        height: 60vh;
-        background-color: gainsboro;
-        display: block;
-        margin: 40px auto;
-    }
-
-    .submit-btn, .back-btn {
-
-        display: block;
-        margin: 0 auto;
-    }
-
-        /* Form: Feedback */
-    
-    .form-feedback-section {
-
-        width: 100%;
-        height: 100vh;
-        background-color: aliceblue;
-        color: white;
-    }
-
-    .feedback-div, .feedback-img {
-
-        width: 50%;
-        height: 100vh;
-        background-color: #36008D;
-        float: left;
-    }
-
-    .feedback-img {
-
-        background-color: antiquewhite;
-    }
-
-    .margin-bottom {
-
-        margin-bottom: 30px;
-    }
-
-    .rating-label {
-
-        margin: 20px 40px 0px 20px;
-        display: inline-block;
-    }
-    
-    .label-left {
-
-        float: left;
-    }
-
-    .label-right {
-
-        float: right;
-    }
-
-        /* Button Rating */
-
-        .button-div {
-
-            display: inline-block;
-            font-size: 0px;
-        }
-
-        .button-rating {
-
-            width: 100px;
-            height: 60px;
-            font-size: 16px;
-            background-color: pink;
-        }
-
-        .button-rating:hover {
-
-            opacity: 0.9;
-        }
-
-        /* Forms: Artwork Details, Form Commission for Clients, Form Commission for Artist */
-
-        .center {
-
-            display: block;
-            margin: 20px auto;
-        }
-
-        .center-align-text {
-
-            text-align: center;
-            margin: 20px;
-        }
-
-        .margin-top {
-
-            margin-top: 60px;
-        }
-
-        .color-pink {
-
-            color: pink;
-        }
-
-        p {
-
-            text-align: justify;
-            margin: 0px 40px;
-        }
-
-        .float-left {
-
-            float: left;
-            margin: 0px 0px;
-        }
-
-        .artwork-container {
-
-            width: 60%;
-            height: 100vh;
-            background-color: aliceblue;
-        }
-
-        .primary-color {
-
-            background-color: #36008D;
-        }
-
-        .artwork-details {
-
-            width: 40%;
-            height: 100vh;
-            color: white;
-        }
-
-        /* Form: Form for Clients */
-
-        .half-width {
-
-            width: 50%;
-            height: 100vh;
-            color: white;
-        }
-
-        input[type=text], input[type=email] {
-
-            height: 15px;
-        }
-
-        legend {
-
-            font-size: 20px;
-            margin: 15px;
-        }
-
-        h4.margin-bottom {
-
-            margin-left: 15px;
-        }
-
-        .form-for-client-image {
-
-            width: 400px;
-            height: 400px;
-        }

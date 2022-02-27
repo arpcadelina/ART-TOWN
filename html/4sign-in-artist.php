@@ -1,10 +1,8 @@
 <?php
-
     //Include filename for scripts/server.php to check db for info
     //Check for errors if there's a similar name and password
     //File path might change depending on the address
-
-    include('C:\xampp\htdocs\art-town\scripts\server.php');
+    include('C:\xampp\htdocs\ART-TOWN-main\scripts\server.php');
 ?>
 
 <!DOCTYPE html>
@@ -26,9 +24,9 @@
             <form class="sign" method="post" enctype="multipart/form-data">
                 <?php
                 
-                    //Check if there are same credentials to db
-                    //File path might change depending on the address
-                    include('C:\xampp\htdocs\art-town\scripts\errors.php');
+                    //Include error.php file in case there's a similar email and full name
+                    //File path might change
+                    include('C:\xampp\htdocs\ART-TOWN-main\scripts\errors.php');
                 ?>
                 <label for="email"> Email </label><br><br>
                     <input type="email" id="email" name="email" required><br><br><br>

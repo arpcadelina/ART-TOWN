@@ -36,8 +36,8 @@
                 <label for="password"> Password </label><br><br>
                     <input type="password" id="password" name="password" required>
                 
-                //Might consider removing the anchor tag, use the button as submit type for form submission
-                //Button should be inside the form
+                <!--Might consider removing the anchor tag, use the button as submit type for form submission-->
+                <!--Button should be inside the form-->
                 <a href="8profile-artist-view.html"><button class="log-in-btn" type="submit" name="login_user"><b> Sign-In </b></button></a>
             </form>
             <p class="account-prompt">Don't have an account? <a href="7how-to-apply.html"> Apply Now! </a></p>

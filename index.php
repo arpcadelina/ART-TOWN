@@ -1,4 +1,5 @@
 <?php 
+  /* Remove session start for now
   session_start(); 
 
   if (!isset($_SESSION['username'])) {
@@ -10,6 +11,7 @@
   	unset($_SESSION['username']);
   	header("location: login.php");
   }
+  */
 ?>
 
 <!DOCTYPE html>

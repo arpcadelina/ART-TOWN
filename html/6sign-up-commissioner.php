@@ -23,7 +23,7 @@
             <p class="small-title"> WELCOME TO ART TOWN! </p>
             
             <!-- Add method for form data-->
-            <form class="sign" name="sign-up-form" method="post" enctype="multipart/form-data">
+            <form class="sign" name="log-in-form" method="post" enctype="multipart/form-data">
                 <?php
                 
                     //Include error.php file in case there's a similar email and full name

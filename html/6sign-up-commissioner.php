@@ -39,6 +39,7 @@
                 <label for="password"> Password </label><br><br>
                     <input type="text" id="password" name="password" value="<?php echo $password; ?>" required>
                 
+                //The anchor tag could be removed, the type="submit" is crucial for form submission 
                 <a href="../index.html"><button class="log-in-btn" type="submit" name="reg_user"><b> Sign-Up </b></button></a>
             </form>
             <p class="account-prompt">Already have an account? <a href="5sign-in-commissioner.html"> Sign In! </a></p>

@@ -8,6 +8,7 @@ $password = "";
 $errors = array(); 
 
 // connect to the database
+//sign-up name might change, depending on the db table name
 $db = mysqli_connect('localhost', 'root', '', 'sign-up');
 
 // REGISTER USER

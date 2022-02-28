@@ -30,6 +30,7 @@
                     //File path might change
                     include('C:\xampp\htdocs\ART-TOWN-main\scripts\errors.php');
                 ?>
+                <div class="sign-form"> 
                 <label for="fullname"> Full Name</label><br><br>
                     <input type="text" id="fullname" name="username" value="<?php echo $username; ?>" required><br><br><br>
 
@@ -38,11 +39,12 @@
 
                 <label for="password"> Password </label><br><br>
                     <input type="text" id="password" name="password" value="<?php echo $password; ?>" required>
+                </div>
                 
                 <!--The anchor tag could be removed, the type="submit" is crucial for form submission -->
-                <a href="../index.html"><button class="log-in-btn" type="submit" name="reg_user"><b> Sign-Up </b></button></a>
+                <a href="../index.php"><button class="log-in-btn" type="submit" name="reg_user"><b> Sign-Up </b></button></a>
             </form>
-            <p class="account-prompt">Already have an account? <a href="5sign-in-commissioner.html"> Sign In! </a></p>
+            <p class="account-prompt">Already have an account? <a href="5sign-in-commissioner.php"> Sign In! </a></p>
         </div>
     </body>
 </html>

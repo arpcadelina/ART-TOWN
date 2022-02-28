@@ -30,15 +30,17 @@
                     //File path might change depending on the address
                     include('C:\xampp\htdocs\ART-TOWN-main\scripts\errors.php');
                 ?>
+                <div class="sign-form"> 
                 <label for="email"> Email </label><br><br>
                     <input type="email" id="email" name="email" required><br><br><br>
 
                 <label for="password"> Password </label><br><br>
                     <input type="text" id="password" name="password" required>
+                </div>
                 
-                <a href="../index.html"><button class="log-in-btn" type="submit" name="login_user"><b> Sign-In </b></button></a>
+                <a href="../index.php"><button class="log-in-btn" type="submit" name="login_user"><b> Sign-In </b></button></a>
             </form>
-            <p class="account-prompt">Don't have an account? <a href="6sign-up-commissioner.html"> Sign Up! </a></p>
+            <p class="account-prompt">Don't have an account? <a href="6sign-up-commissioner.php"> Sign Up! </a></p>
         </div>
     </body>
 </html>

@@ -2,7 +2,7 @@
     //Include filename for scripts/server.php to check db for info
     //Check for errors if there's a similar name and password
     //File path might change depending on the address
-    include('C:\xampp\htdocs\ART-TOWN-main\scripts\server.php');
+    include('../scripts/server.php');
 ?>
 
 <!DOCTYPE html>
@@ -28,11 +28,13 @@
                     //File path might change
                     include('C:\xampp\htdocs\ART-TOWN-main\scripts\errors.php');
                 ?>
+                <div class="sign-form"> 
                 <label for="email"> Email </label><br><br>
                     <input type="email" id="email" name="email" required><br><br><br>
 
                 <label for="password"> Password </label><br><br>
                     <input type="password" id="password" name="password" required>
+                </div>
                 
                 <!--Might consider removing the anchor tag, use the button as submit type for form submission-->
                 <!--Button should be inside the form-->

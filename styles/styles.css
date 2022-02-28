@@ -225,12 +225,12 @@
 
                     .sign-div:nth-child(1) {
                         background-image: url(../Other/artist.png);
-                        background-size: contain;
+                        background-size: cover;
                     }
 
                     .sign-div:nth-child(2) {
                         background-image: url(../Other/commissioner.png);
-                        background-size: contain;
+                        background-size: cover;
                     }
 
                     .sign-in button {
@@ -559,7 +559,7 @@
                     margin-bottom: 20px;
                 }
 
-                .sign {
+                .sign-form {
                     margin: 40px;
                     margin-left: 150px;
                 }

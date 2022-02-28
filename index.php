@@ -30,7 +30,7 @@
                 <img class="logo" src = "Other/logo.png">
                 <div class="nav-container"
                 <ul>
-                    <li class="menu"><a href="index.html"> Home </a></li>
+                    <li class="menu"><a href="index.php"> Home </a></li>
                     <li class="menu"><a href="html/1artistlist.html"> Artists </a></li>
                     <li class="menu"><a href="html/2artworklist.html"> Artworks </a></li>
                     <li class="menu"><a href="html/3commissionlist.html"> Commission </a></li>   
@@ -92,12 +92,12 @@
         <!-- Sign In Section-->
         <section class="sign-in">
             <div class="sign-div">
-                <a href="html/4sign-in-artist.html"><button class="home-button-sign"><b> Log In </b></button></a><br>
+                <a href="html/4sign-in-artist.php"><button class="home-button-sign"><b> Log In </b></button></a><br>
                 <a href="html/7how-to-apply.html"><button class="home-button-apply"><b> How To Apply </b></button></a>
             </div>
             <div class="sign-div">
-                <a href="html/5sign-in-commissioner.html"><button class="home-button-sign"><b> Log In </b></button></a><br>
-                <a href="html/6sign-up-commissioner.html"><button class="home-button-apply"><b> Sign Up </b></button></a>
+                <a href="html/5sign-in-commissioner.php"><button class="home-button-sign"><b> Log In </b></button></a><br>
+                <a href="html/6sign-up-commissioner.php"><button class="home-button-apply"><b> Sign Up </b></button></a>
             </div>
         </section>
     </body>

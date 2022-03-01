@@ -10,6 +10,7 @@ $errors = array();
 // connect to the database
 //sign-up name might change, depending on the db table name
 $db = mysqli_connect('localhost', 'root', '', 'sign-up');
+$db_2 = mysqli_connect('localhost', 'root', '', 'artist-info');
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
@@ -53,7 +54,7 @@ if (isset($_POST['reg_user'])) {
   }
 }
 
-// LOGIN USER
+// LOGIN Client
 if (isset($_POST['login_user'])) {
   $email = mysqli_real_escape_string($db, $_POST['email']);
   $password = mysqli_real_escape_string($db, $_POST['password']);
@@ -79,6 +80,36 @@ if (isset($_POST['login_user'])) {
   		array_push($errors, "Wrong username/password combination");
   	}
   }
+  
+    // LOGIN ARTIST
+  if(isset($_POST['login_artist'])) {
+
+  $email = mysqli_real_escape_string($db_2, $_POST['email']);
+  $password = mysqli_real_escape_string($db_2, $_POST['password']);
+
+    if (empty($email)) {
+      array_push($errors, "Email is required");
+    }
+    if (empty($password)) {
+      array_push($errors, "Password is required");
+    }
+
+    if (count($errors) == 0) {
+
+      $query = "SELECT * FROM artists WHERE email='$email' AND password='$password'";
+      $results = mysqli_query($db_2, $query);
+      if (mysqli_num_rows($results) == 1) {
+        $_SESSION['email'] = $email;
+        $_SESSION['password'] = $password;
+        $_SESSION['success'] = "Welcome to Art Town, " . $email;
+        header('location: ../index.php');
+  
+      }else {
+        array_push($errors, "Wrong username/password combination");
+      }
+    }
+  }
+
 }
 
 ?>

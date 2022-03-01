@@ -36,7 +36,7 @@
                     <li class="menu"><a href="html/3commissionlist.html"> Commission </a></li>   
                 </ul>
                 </div>
-                <li class="sign-button"><a href="html/sign-as.html"><button><b> Sign In </b></button></a></li>
+                <li class="sign-button"><a href="index.php#sign-in"><button><b> Sign In </b></button></a></li>
             </nav>
         </section>
 
@@ -44,22 +44,22 @@
         <section class="featured">
             <header class="fttitle"> Featured Artworks </header>
             <div class = "featured-container">
-            <a href="html/collage-view.html"><figure class="featured-figure">
+            <a href="html/collage-view.html#dg6"><figure class="featured-figure">
                 <img src="Art/DG6.png"
                     class="featured-img"/>
                 <h6 class="featured-h6">Original Character</h6>
                 <figcaption></figcaption>
             </figure></a>
-            <a href="html/collage-view.html"><figure class="featured-figure">
+            <a href="html/collage-view.html#dr2"><figure class="featured-figure">
                 <img src="Art/DR2.png"
                     class="featured-img"/>
                 <h6 class="featured-h6">Fur Babies</h6>
                 <figcaption></figcaption>
             </figure></a>
-            <a href="html/collage-view.html"><figure class="featured-figure">
-                <img src="Art/PT1.png"
+            <a href="html/collage-view.html#pt3"><figure class="featured-figure">
+                <img src="Art/PT3.png"
                     class="featured-img"/>
-                <h6 class="featured-h6">Scenery</h6>
+                <h6 class="featured-h6">Portrait</h6>
                 <figcaption></figcaption>
             </figure></a>
             </div>
@@ -90,7 +90,7 @@
         </section>
 
         <!-- Sign In Section-->
-        <section class="sign-in">
+        <section class="sign-in" id = sign-in>
             <div class="sign-div">
                 <a href="html/4sign-in-artist.php"><button class="home-button-sign"><b> Log In </b></button></a><br>
                 <a href="html/7how-to-apply.html"><button class="home-button-apply"><b> How To Apply </b></button></a>

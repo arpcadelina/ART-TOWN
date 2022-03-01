@@ -131,7 +131,7 @@
 
                 else {
 
-                    window.alert("nani");
+                    window.alert("Not yet logged in.");
                 }
 
             }

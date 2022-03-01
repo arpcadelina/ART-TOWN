@@ -1,17 +1,8 @@
 <?php 
-  /* Remove session start for now
-  session_start(); 
 
-  if (!isset($_SESSION['username'])) {
-  	$_SESSION['msg'] = "You must log in first";
-  	header('location: login.php');
-  }
-  if (isset($_GET['logout'])) {
-  	session_destroy();
-  	unset($_SESSION['username']);
-  	header("location: login.php");
-  }
-  */
+    // File Path might change
+    include('C:\xampp\htdocs\ART-TOWN-main\scripts\session.php');
+    include('C:\xampp\htdocs\ART-TOWN-main\scripts\notification.php');
 ?>
 
 <!DOCTYPE html>
@@ -120,4 +111,31 @@
             © All Rights Reserved. 2022  
         </aside>
     </footer>
+
+      <script type="text/javascript" >
+
+        var status = "<?php echo $status; ?>";
+
+        function changeButton() {
+
+            window.alert(status);
+
+            if (status = 1) {
+
+                var btn = document.getElementById("sign-button");
+                var anchor = document.getElementById("log-out");
+
+                btn.textContent = "Log Out";
+                anchor.setAttribute("href", "index.php?logout=1");
+            }
+
+                else {
+
+                    window.alert("nani");
+                }
+
+            }
+
+            changeButton();
+    </script>
 </html>

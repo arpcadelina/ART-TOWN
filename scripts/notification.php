@@ -4,7 +4,6 @@
 
         $status = 1;
         
-        //echo $_SESSION['success'];
-        unset($_SESSION['success']);
+        echo $_SESSION['success'];
     }
 ?>

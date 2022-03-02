@@ -20,9 +20,9 @@
                 <div class="nav-container"
                 <ul>
                     <li class="menu"><a href="../index.php"> Home </a></li>
-                    <li class="menu"><a href="1artistlist.html"> Artists </a></li>
-                    <li class="menu"><a href="2artworklist.html"> Artworks </a></li>
-                    <li class="menu"><a href="3commissionlist.html"> Commission </a></li>
+                    <li class="menu"><a href="1artistlist.php"> Artists </a></li>
+                    <li class="menu"><a href="2artworklist.php"> Artworks </a></li>
+                    <li class="menu"><a href="3commissionlist.php"> Commission </a></li>
                 </ul>
                 </div>
                 <li class="sign-button"><a href="../index.php#sign-in" id="log-out"><button id="sign-button"><b> Sign In </b></button></a></li>

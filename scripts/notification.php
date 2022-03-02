@@ -4,6 +4,6 @@
 
         $status = 1;
         
-        echo $_SESSION['success'];
+        $success = $_SESSION['success'];
     }
 ?>

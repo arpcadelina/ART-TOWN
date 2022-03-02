@@ -115,11 +115,12 @@
       <script type="text/javascript" >
 
         var status = "<?php echo $status; ?>";
-
+        var success = "<?php echo $success; ?>";
+          
         function changeButton() {
 
             window.alert(status);
-
+            
             if (status = 1) {
 
                 var btn = document.getElementById("sign-button");

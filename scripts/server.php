@@ -73,18 +73,22 @@ if (isset($_POST['login_user'])) {
   	//$password = md5($password);
   	$query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
   	$results = mysqli_query($db, $query);
-  	if (mysqli_num_rows($results) == 1) {
-  	  $_SESSION['email'] = $email;
-      $_SESSION['password'] = $password;
-  	  $_SESSION['success'] = "You are now logged in";
-  	  header('location: ../index.php');
- 
-  	}else {
-  		array_push($errors, "Wrong username/password combination");
-  	}
+    
+      if (mysqli_num_rows($results) == 1) {
+        $_SESSION['email'] = $email;
+        $_SESSION['password'] = $password;
+        $_SESSION['success'] = "You are now logged in";
+        header('location: ../index.php');
+
+       }  
+      
+        else {
+          array_push($errors, "Wrong username/password combination");
+        }
+    }
   }
-  
-    // LOGIN ARTIST
+
+  // LOGIN ARTIST
   if(isset($_POST['login_artist'])) {
 
   $email = mysqli_real_escape_string($db, $_POST['email']);
@@ -112,7 +116,5 @@ if (isset($_POST['login_user'])) {
       }
     }
   }
-
-}
 
 ?>

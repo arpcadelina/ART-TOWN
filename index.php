@@ -27,7 +27,7 @@
                     <li class="menu"><a href="html/3commissionlist.html"> Commission </a></li>   
                 </ul>
                 </div>
-                <li class="sign-button"><a href="index.php#sign-in"><button><b> Sign In </b></button></a></li>
+                <li class="sign-button"><a href="index.php#sign-in" id="log-out"><button id="sign-button"><b> Sign In </b></button></a></li>
             </nav>
         </section>
 

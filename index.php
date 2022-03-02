@@ -119,7 +119,7 @@
           
         function changeButton() {
 
-            window.alert(status);
+            window.alert(success);
             
             if (status = 1) {
 

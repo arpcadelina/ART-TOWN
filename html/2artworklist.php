@@ -1,3 +1,9 @@
+<?php 
+
+    include('C:\xampp\htdocs\ART-TOWN-main\scripts\session.php');
+    include('C:\xampp\htdocs\ART-TOWN-main\scripts\notification.php');
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,7 +25,7 @@
                     <li class="menu"><a href="3commissionlist.html"> Commission </a></li> 
                 </ul>
                 </div>
-                <li class="sign-button"><a href="../index.php#sign-in"><button><b> Sign In </b></button></a></li>
+                <li class="sign-button"><a href="../index.php#sign-in" id="log-out"><button id="sign-button"><b> Sign In </b></button></a></li>
             </nav>
         </section>
 
@@ -146,4 +152,32 @@
             © All Rights Reserved. 2022  
         </aside>
     </footer>
+
+    <script type="text/javascript" >
+
+        var status = "<?php echo $status; ?>";
+
+        function changeButton() {
+
+            window.alert(status);
+
+            if (status = 1) {
+
+                var btn = document.getElementById("sign-button");
+                var anchor = document.getElementById("log-out");
+
+                btn.textContent = "Log Out";
+                anchor.setAttribute("href", "../html/4sign-in-artist.php");
+            }
+
+                else {
+
+                    window.alert("nani");
+                }
+
+            }
+
+            changeButton();
+        
+    </script>
 </html>

@@ -47,14 +47,33 @@
                 </form>
             </div>
             <div class="form-upload-div">
-                <label for="file-upload" class="custom-file-upload">
-                    <b>+</b><br><br>
-                    CHOOSE FILE
-                </label>
                 <input id="file-upload" type="file"/>
+                <div class="preview" id = "preview">
+                    <img src="" alt= "Image Preview" id = "image-preview">
+                </div>
                 <a href="3commissionlist.html"><button class="log-in-btn"><b> Submit </b></button></a>
                 <a href="2artworklist.html"><button class="log-in-btn"><b> Back</button></b></a>
             </div>
+            <script>
+                const imagefile = document.getElementById("file-upload");
+                const preview = document.getElementById("preview");
+                const image = document.getElementById("image-preview");
+
+                imagefile.addEventListener("change", function() {
+                    const file = this.files[0];
+
+                    if (file){
+                        const reader = new FileReader();
+                        image.style.display = "block";
+
+                        reader.addEventListener("load",function(){
+                            image.setAttribute("src", this.result);
+                        });
+
+                        reader.readAsDataURL(file);
+                    }
+                });
+            </script>
         </section>
     </body>
 </html>

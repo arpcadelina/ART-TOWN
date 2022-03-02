@@ -32,7 +32,7 @@
                 ?>
                 <div class="sign-form"> 
                 <label for="fullname"> Full Name</label><br><br>
-                    <input type="text" id="fullname" name="username" value="<?php echo $username; ?>" required><br><br><br>
+                    <input type="text" id="fullname" name="fullname" value="<?php echo $fullname; ?>" required><br><br><br>
 
                 <label for="email"> Email </label><br><br>
                     <input type="email" id="email" name="email" value="<?php echo $email; ?>" required><br><br><br>

@@ -43,10 +43,29 @@
                             <b>Painting</b><br>
                             &emsp;&emsp;Scenery
                         </p>
-                        <p class="rating">
-                            <b>RATING</b><br>
-                            &emsp;&emsp;4.7 / 5
-                        </p>
+                        <?php
+                        $db = mysqli_connect('localhost', 'root', '', 'sign-up');
+                        $ave = "SELECT CAST(AVG(rating) AS DECIMAL(10,1)) FROM feedbacks WHERE artistname = 'Mcleinarts'";
+                        $result = $db->query($ave);
+                        while($rows = mysqli_fetch_array($result)){
+                            if ($rows['CAST(AVG(rating) AS DECIMAL(10,1))']>0){
+                                ?>
+                                <p class="rating">
+                                    <b>RATING</b><br>
+                                    &emsp;&emsp;<?=$rows['CAST(AVG(rating) AS DECIMAL(10,1))']?>/ 5
+                                </p>
+                                <?php
+                            }
+                            else{
+                                ?>
+                                <p class="rating">
+                                    <b>RATING</b><br>
+                                    &emsp;&emsp;0 / 5
+                                </p>
+                                <?php
+                            }
+                        }
+                        ?>
                     </div>
                 </figure></a>
                 <a href="9profile-commissioner-view.php#artist2"><figure class="artist-figure">
@@ -61,10 +80,29 @@
                             <b>Painting</b><br>
                             &emsp;&emsp;Fur Babies
                         </p>
-                        <p class="rating">
-                            <b>RATING</b><br>
-                            &emsp;&emsp;4.5 / 5
-                        </p>
+                        <?php
+                        $db = mysqli_connect('localhost', 'root', '', 'sign-up');
+                        $ave = "SELECT CAST(AVG(rating) AS DECIMAL(10,1)) FROM feedbacks WHERE artistname = 'Kapebeansis'";
+                        $result = $db->query($ave);
+                        while($rows = mysqli_fetch_array($result)){
+                            if ($rows['CAST(AVG(rating) AS DECIMAL(10,1))']>0){
+                                ?>
+                                <p class="rating">
+                                    <b>RATING</b><br>
+                                    &emsp;&emsp;<?=$rows['CAST(AVG(rating) AS DECIMAL(10,1))']?>/ 5
+                                </p>
+                                <?php
+                            }
+                            else{
+                                ?>
+                                <p class="rating">
+                                    <b>RATING</b><br>
+                                    &emsp;&emsp;0 / 5
+                                </p>
+                                <?php
+                            }
+                        }
+                        ?>
                     </div>
                 </figure></a>
             </div>
@@ -80,10 +118,29 @@
                             &emsp;&emsp;Portrait<br>
                             &emsp;&emsp;Group
                         </p>
-                        <p class="rating">
-                            <b>RATING</b><br>
-                            &emsp;&emsp;5 / 5
-                        </p>
+                        <?php
+                        $db = mysqli_connect('localhost', 'root', '', 'sign-up');
+                        $ave = "SELECT CAST(AVG(rating) AS DECIMAL(10,1)) FROM feedbacks WHERE artistname = 'Chachiearts'";
+                        $result = $db->query($ave);
+                        while($rows = mysqli_fetch_array($result)){
+                            if ($rows['CAST(AVG(rating) AS DECIMAL(10,1))']>0){
+                                ?>
+                                <p class="rating">
+                                    <b>RATING</b><br>
+                                    &emsp;&emsp;<?=$rows['CAST(AVG(rating) AS DECIMAL(10,1))']?>/ 5
+                                </p>
+                                <?php
+                            }
+                            else{
+                                ?>
+                                <p class="rating">
+                                    <b>RATING</b><br>
+                                    &emsp;&emsp;0 / 5
+                                </p>
+                                <?php
+                            }
+                        }
+                        ?>
                     </div>
                 </figure></a>
                 <a href="9profile-commissioner-view.php#artist4"><figure class="artist-figure">
@@ -97,10 +154,29 @@
                             &emsp;&emsp;Portrait<br>
                             &emsp;&emsp;Group
                         </p>
-                        <p class="rating">
-                            <b>RATING</b><br>
-                            &emsp;&emsp;4.8 / 5
-                        </p>
+                        <?php
+                        $db = mysqli_connect('localhost', 'root', '', 'sign-up');
+                        $ave = "SELECT CAST(AVG(rating) AS DECIMAL(10,1)) FROM feedbacks WHERE artistname = 'Aeonix'";
+                        $result = $db->query($ave);
+                        while($rows = mysqli_fetch_array($result)){
+                            if ($rows['CAST(AVG(rating) AS DECIMAL(10,1))']>0){
+                                ?>
+                                <p class="rating">
+                                    <b>RATING</b><br>
+                                    &emsp;&emsp;<?=$rows['CAST(AVG(rating) AS DECIMAL(10,1))']?>/ 5
+                                </p>
+                                <?php
+                            }
+                            else{
+                                ?>
+                                <p class="rating">
+                                    <b>RATING</b><br>
+                                    &emsp;&emsp;0 / 5
+                                </p>
+                                <?php
+                            }
+                        }
+                        ?>
                     </div>
                 </figure></a>
             </div>
@@ -118,10 +194,29 @@
                             <b>Drawing</b><br>
                             &emsp;&emsp;Fan Art
                         </p>
-                        <p class="rating">
-                            <b>RATING</b><br>
-                            &emsp;&emsp;4.9 / 5
-                        </p>
+                        <?php
+                        $db = mysqli_connect('localhost', 'root', '', 'sign-up');
+                        $ave = "SELECT CAST(AVG(rating) AS DECIMAL(10,1)) FROM feedbacks WHERE artistname = 'Salmonfishuu'";
+                        $result = $db->query($ave);
+                        while($rows = mysqli_fetch_array($result)){
+                            if ($rows['CAST(AVG(rating) AS DECIMAL(10,1))']>0){
+                                ?>
+                                <p class="rating">
+                                    <b>RATING</b><br>
+                                    &emsp;&emsp;<?=$rows['CAST(AVG(rating) AS DECIMAL(10,1))']?>/ 5
+                                </p>
+                                <?php
+                            }
+                            else{
+                                ?>
+                                <p class="rating">
+                                    <b>RATING</b><br>
+                                    &emsp;&emsp;0 / 5
+                                </p>
+                                <?php
+                            }
+                        }
+                        ?>
                     </div>
                 </figure></a>
                 <a href="9profile-commissioner-view.php#artist6"><figure class="artist-figure">
@@ -135,10 +230,29 @@
                             &emsp;&emsp;Original Character<br>
                             &emsp;&emsp;Anime Me
                         </p>
-                        <p class="rating">
-                            <b>RATING</b><br>
-                            &emsp;&emsp;5 / 5
-                        </p>
+                        <?php
+                        $db = mysqli_connect('localhost', 'root', '', 'sign-up');
+                        $ave = "SELECT CAST(AVG(rating) AS DECIMAL(10,1)) FROM feedbacks WHERE artistname = 'Art of Ran'";
+                        $result = $db->query($ave);
+                        while($rows = mysqli_fetch_array($result)){
+                            if ($rows['CAST(AVG(rating) AS DECIMAL(10,1))']>0){
+                                ?>
+                                <p class="rating">
+                                    <b>RATING</b><br>
+                                    &emsp;&emsp;<?=$rows['CAST(AVG(rating) AS DECIMAL(10,1))']?>/ 5
+                                </p>
+                                <?php
+                            }
+                            else{
+                                ?>
+                                <p class="rating">
+                                    <b>RATING</b><br>
+                                    &emsp;&emsp;0 / 5
+                                </p>
+                                <?php
+                            }
+                        }
+                        ?>
                     </div>
                 </figure></a>
             </div>
@@ -153,10 +267,29 @@
                             <b>Painting</b><br>
                             &emsp;&emsp;Portrait
                         </p>
-                        <p class="rating">
-                            <b>RATING</b><br>
-                            &emsp;&emsp;5 / 5
-                        </p>
+                        <?php
+                        $db = mysqli_connect('localhost', 'root', '', 'sign-up');
+                        $ave = "SELECT CAST(AVG(rating) AS DECIMAL(10,1)) FROM feedbacks WHERE artistname = 'Yurieem'";
+                        $result = $db->query($ave);
+                        while($rows = mysqli_fetch_array($result)){
+                            if ($rows['CAST(AVG(rating) AS DECIMAL(10,1))']>0){
+                                ?>
+                                <p class="rating">
+                                    <b>RATING</b><br>
+                                    &emsp;&emsp;<?=$rows['CAST(AVG(rating) AS DECIMAL(10,1))']?>/ 5
+                                </p>
+                                <?php
+                            }
+                            else{
+                                ?>
+                                <p class="rating">
+                                    <b>RATING</b><br>
+                                    &emsp;&emsp;0 / 5
+                                </p>
+                                <?php
+                            }
+                        }
+                        ?>
                     </div>
                 </figure></a>
                 

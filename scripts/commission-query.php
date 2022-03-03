@@ -23,6 +23,7 @@
         $address       = mysqli_real_escape_string($db, $_POST['address']);
         $details       = mysqli_real_escape_string($db, $_POST['details']);
         $upload        = mysqli_real_escape_string($db,$_FILES['upload']['name']);
+        $status        = 'new';
         $target = '../uploaded/'. basename( $_FILES["upload"]["name"]);
         move_uploaded_file($_FILES['upload']['tmp_name'], $target);
         
@@ -39,8 +40,8 @@
             
                 if (count($errors) === 0) {
 
-                    $query_commission = "INSERT INTO commissions (artworkname, clientname, clientemail, contactnumber, address, details, upload) 
-                    VALUES ('$artworkName', '$clientName', '$clientEmail', '$contactNumber', '$address', '$details', '$upload')";
+                    $query_commission = "INSERT INTO commissions (artworkname, clientname, clientemail, contactnumber, address, details, upload, status) 
+                    VALUES ('$artworkName', '$clientName', '$clientEmail', '$contactNumber', '$address', '$details', '$upload', '$status')";
 
                     
 

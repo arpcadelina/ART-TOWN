@@ -51,7 +51,7 @@ if (isset($_POST['reg_user'])) {
   	mysqli_query($db, $query);
   	$_SESSION['fullname'] = $fullname;
   	$_SESSION['success'] = "You are now logged in";
-  	header('location: 8profile-artist-view.php');
+  	header('location: ../index.php');
   }
 }
 
@@ -109,7 +109,7 @@ if (isset($_POST['login_user'])) {
         $_SESSION['email'] = $email;
         $_SESSION['password'] = $password;
         $_SESSION['success'] = "Welcome to Art Town, " . $email;
-        header('location: ../index.php');
+        header('location: 8profile-artist-view.php');
   
       }else {
         array_push($errors, "Wrong username/password combination");

@@ -56,25 +56,43 @@
                     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                     <br><br><br><br><br><br>
                     <header class="ptitle"> Feedback </header>
-                    <div class="ave-container">
-                        <p class="average"><b>4.7</b></p>
-                        <p class="average">out of<br>5</p>
-                    </div>
-                    <div class="details-card">
-                        <p class="commission-h3">Name</p><br><br>
-                        <p class="grade"><b> 5 out of 5 </b></p><br><br>
-                        <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                    </div>
-                    <div class="details-card">
-                        <p class="commission-h3">Name</p><br><br>
-                        <p class="grade"><b> 5 out of 5 </b></p><br><br>
-                        <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                    </div>
-                    <div class="details-card">
-                        <p class="commission-h3">Name</p><br><br>
-                        <p class="grade"><b> 4 out of 5 </b></p><br><br>
-                        <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                    </div>
+                    <?php
+                        $db = mysqli_connect('localhost', 'root', '', 'sign-up');
+                        $query = "SELECT * FROM feedbacks WHERE artistname = 'Mcleinarts'";
+                        $query_run = mysqli_query($db,$query);
+                        $ave = "SELECT CAST(AVG(rating) AS DECIMAL(10,1)) FROM feedbacks WHERE artistname = 'Mcleinarts'";
+                        $result = $db->query($ave);
+                        while($rows = mysqli_fetch_array($result)){
+                            if ($rows['CAST(AVG(rating) AS DECIMAL(10,1))']>0){
+                                ?>
+                                <div class="ave-container">
+                                    <p class="average"><b><?=$rows['CAST(AVG(rating) AS DECIMAL(10,1))']?></b></p>
+                                    <p class="average">out of<br>5</p>
+                                </div>
+                                <?php
+                            }
+                            else{
+                                ?>
+                                <div class="ave-container">
+                                    <p class="average"><b>0.0</b></p>
+                                    <p class="average">out of<br>5</p>
+                                </div>
+                                <?php
+                            }  
+                        }
+                        if (mysqli_num_rows($query_run)>0){
+                            foreach ($query_run as $row){
+                                ?>
+                                <div class="details-card">
+                                    <p class="commission-h3"><?=$row['commissionername']?></p><br><br>
+                                    <p class="commission-h3"><?=$row['date']?></p><br><br>
+                                    <p class="grade"><b><?=$row['rating']?> out of 5</b></p><br><br>
+                                    <p class="commission-h3"><?=$row['feedback']?></p>
+                                </div>
+                                <?php
+                            }
+                        }
+                        ?>
                 </div>  
             </section>
         </section> 
@@ -128,25 +146,43 @@
                         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                         <br><br><br><br><br><br>
                         <header class="ptitle"> Feedback </header>
-                        <div class="ave-container">
-                            <p class="average"><b>4.7</b></p>
-                            <p class="average">out of<br>5</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 5 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 5 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 4 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
+                        <?php
+                        $db = mysqli_connect('localhost', 'root', '', 'sign-up');
+                        $query = "SELECT * FROM feedbacks WHERE artistname = 'Kapebeansis'";
+                        $query_run = mysqli_query($db,$query);
+                        $ave = "SELECT CAST(AVG(rating) AS DECIMAL(10,1)) FROM feedbacks WHERE artistname = 'Kapebeansis'";
+                        $result = $db->query($ave);
+                        while($rows = mysqli_fetch_array($result)){
+                            if ($rows['CAST(AVG(rating) AS DECIMAL(10,1))']>0){
+                                ?>
+                                <div class="ave-container">
+                                    <p class="average"><b><?=$rows['CAST(AVG(rating) AS DECIMAL(10,1))']?></b></p>
+                                    <p class="average">out of<br>5</p>
+                                </div>
+                                <?php
+                            }
+                            else{
+                                ?>
+                                <div class="ave-container">
+                                    <p class="average"><b>0.0</b></p>
+                                    <p class="average">out of<br>5</p>
+                                </div>
+                                <?php
+                            }
+                        }
+                        if (mysqli_num_rows($query_run)>0){
+                            foreach ($query_run as $row){
+                                ?>
+                                <div class="details-card">
+                                    <p class="commission-h3"><?=$row['commissionername']?></p><br><br>
+                                    <p class="commission-h3"><?=$row['date']?></p><br><br>
+                                    <p class="grade"><b><?=$row['rating']?> out of 5</b></p><br><br>
+                                    <p class="commission-h3"><?=$row['feedback']?></p>
+                                </div>
+                                <?php
+                            }
+                        }
+                        ?>
                     </div>  
                 </section>
             </section> 
@@ -200,25 +236,43 @@
                         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                         <br><br><br><br><br><br>
                         <header class="ptitle"> Feedback </header>
-                        <div class="ave-container">
-                            <p class="average"><b>4.7</b></p>
-                            <p class="average">out of<br>5</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 5 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 5 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 4 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
+                        <?php
+                        $db = mysqli_connect('localhost', 'root', '', 'sign-up');
+                        $query = "SELECT * FROM feedbacks WHERE artistname = 'Chachiearts'";
+                        $query_run = mysqli_query($db,$query);
+                        $ave = "SELECT CAST(AVG(rating) AS DECIMAL(10,1)) FROM feedbacks WHERE artistname = 'Chachiearts'";
+                        $result = $db->query($ave);
+                        while($rows = mysqli_fetch_array($result)){
+                            if ($rows['CAST(AVG(rating) AS DECIMAL(10,1))']>0){
+                                ?>
+                                <div class="ave-container">
+                                    <p class="average"><b><?=$rows['CAST(AVG(rating) AS DECIMAL(10,1))']?></b></p>
+                                    <p class="average">out of<br>5</p>
+                                </div>
+                                <?php
+                            }
+                            else{
+                                ?>
+                                <div class="ave-container">
+                                    <p class="average"><b>0.0</b></p>
+                                    <p class="average">out of<br>5</p>
+                                </div>
+                                <?php
+                            }
+                        }
+                        if (mysqli_num_rows($query_run)>0){
+                            foreach ($query_run as $row){
+                                ?>
+                                <div class="details-card">
+                                    <p class="commission-h3"><?=$row['commissionername']?></p><br><br>
+                                    <p class="commission-h3"><?=$row['date']?></p><br><br>
+                                    <p class="grade"><b><?=$row['rating']?> out of 5</b></p><br><br>
+                                    <p class="commission-h3"><?=$row['feedback']?></p>
+                                </div>
+                                <?php
+                            }
+                        }
+                        ?>
                     </div>  
                 </section>
             </section> 
@@ -272,25 +326,43 @@
                         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                         <br><br><br><br><br><br>
                         <header class="ptitle"> Feedback </header>
-                        <div class="ave-container">
-                            <p class="average"><b>4.7</b></p>
-                            <p class="average">out of<br>5</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 5 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 5 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 4 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
+                        <?php
+                        $db = mysqli_connect('localhost', 'root', '', 'sign-up');
+                        $query = "SELECT * FROM feedbacks WHERE artistname = 'Aeonix'";
+                        $query_run = mysqli_query($db,$query);
+                        $ave = "SELECT CAST(AVG(rating) AS DECIMAL(10,1)) FROM feedbacks WHERE artistname = 'Aeonix'";
+                        $result = $db->query($ave);
+                        while($rows = mysqli_fetch_array($result)){
+                            if ($rows['CAST(AVG(rating) AS DECIMAL(10,1))']>0){
+                                ?>
+                                <div class="ave-container">
+                                    <p class="average"><b><?=$rows['CAST(AVG(rating) AS DECIMAL(10,1))']?></b></p>
+                                    <p class="average">out of<br>5</p>
+                                </div>
+                                <?php
+                            }
+                            else{
+                                ?>
+                                <div class="ave-container">
+                                    <p class="average"><b>0.0</b></p>
+                                    <p class="average">out of<br>5</p>
+                                </div>
+                                <?php
+                            }
+                        }
+                        if (mysqli_num_rows($query_run)>0){
+                            foreach ($query_run as $row){
+                                ?>
+                                <div class="details-card">
+                                    <p class="commission-h3"><?=$row['commissionername']?></p><br><br>
+                                    <p class="commission-h3"><?=$row['date']?></p><br><br>
+                                    <p class="grade"><b><?=$row['rating']?> out of 5</b></p><br><br>
+                                    <p class="commission-h3"><?=$row['feedback']?></p>
+                                </div>
+                                <?php
+                            }
+                        }
+                        ?>
                     </div>  
                 </section>
             </section> 
@@ -350,25 +422,43 @@
                         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                         <br><br><br><br><br><br>
                         <header class="ptitle"> Feedback </header>
-                        <div class="ave-container">
-                            <p class="average"><b>4.7</b></p>
-                            <p class="average">out of<br>5</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 5 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 5 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 4 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
+                        <?php
+                        $db = mysqli_connect('localhost', 'root', '', 'sign-up');
+                        $query = "SELECT * FROM feedbacks WHERE artistname = 'Salmonfishuu'";
+                        $query_run = mysqli_query($db,$query);
+                        $ave = "SELECT CAST(AVG(rating) AS DECIMAL(10,1)) FROM feedbacks WHERE artistname = 'Salmonfishuu'";
+                        $result = $db->query($ave);
+                        while($rows = mysqli_fetch_array($result)){
+                            if ($rows['CAST(AVG(rating) AS DECIMAL(10,1))']>0){
+                                ?>
+                                <div class="ave-container">
+                                    <p class="average"><b><?=$rows['CAST(AVG(rating) AS DECIMAL(10,1))']?></b></p>
+                                    <p class="average">out of<br>5</p>
+                                </div>
+                                <?php
+                            }
+                            else{
+                                ?>
+                                <div class="ave-container">
+                                    <p class="average"><b>0.0</b></p>
+                                    <p class="average">out of<br>5</p>
+                                </div>
+                                <?php
+                            }
+                        }
+                        if (mysqli_num_rows($query_run)>0){
+                            foreach ($query_run as $row){
+                                ?>
+                                <div class="details-card">
+                                    <p class="commission-h3"><?=$row['commissionername']?></p><br><br>
+                                    <p class="commission-h3"><?=$row['date']?></p><br><br>
+                                    <p class="grade"><b><?=$row['rating']?> out of 5</b></p><br><br>
+                                    <p class="commission-h3"><?=$row['feedback']?></p>
+                                </div>
+                                <?php
+                            }
+                        }
+                        ?>
                     </div>  
                 </section>
             </section> 
@@ -422,25 +512,43 @@
                         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                         <br><br><br><br><br><br>
                         <header class="ptitle"> Feedback </header>
-                        <div class="ave-container">
-                            <p class="average"><b>4.7</b></p>
-                            <p class="average">out of<br>5</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 5 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 5 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 4 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
+                        <?php
+                        $db = mysqli_connect('localhost', 'root', '', 'sign-up');
+                        $query = "SELECT * FROM feedbacks WHERE artistname = 'Art of Ran'";
+                        $query_run = mysqli_query($db,$query);
+                        $ave = "SELECT CAST(AVG(rating) AS DECIMAL(10,1)) FROM feedbacks WHERE artistname = 'Art of Ran'";
+                        $result = $db->query($ave);
+                        while($rows = mysqli_fetch_array($result)){
+                            if ($rows['CAST(AVG(rating) AS DECIMAL(10,1))']>0){
+                                ?>
+                                <div class="ave-container">
+                                    <p class="average"><b><?=$rows['CAST(AVG(rating) AS DECIMAL(10,1))']?></b></p>
+                                    <p class="average">out of<br>5</p>
+                                </div>
+                                <?php
+                            }
+                            else{
+                                ?>
+                                <div class="ave-container">
+                                    <p class="average"><b>0.0</b></p>
+                                    <p class="average">out of<br>5</p>
+                                </div>
+                                <?php
+                            }
+                        }
+                        if (mysqli_num_rows($query_run)>0){
+                            foreach ($query_run as $row){
+                                ?>
+                                <div class="details-card">
+                                    <p class="commission-h3"><?=$row['commissionername']?></p><br><br>
+                                    <p class="commission-h3"><?=$row['date']?></p><br><br>
+                                    <p class="grade"><b><?=$row['rating']?> out of 5</b></p><br><br>
+                                    <p class="commission-h3"><?=$row['feedback']?></p>
+                                </div>
+                                <?php
+                            }
+                        }
+                        ?>
                     </div>  
                 </section>
             </section> 
@@ -488,25 +596,43 @@
                         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                         <br><br><br><br><br><br>
                         <header class="ptitle"> Feedback </header>
-                        <div class="ave-container">
-                            <p class="average"><b>4.7</b></p>
-                            <p class="average">out of<br>5</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 5 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 5 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
-                        <div class="details-card">
-                            <p class="commission-h3">Name</p><br><br>
-                            <p class="grade"><b> 4 out of 5 </b></p><br><br>
-                            <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                        </div>
+                        <?php
+                        $db = mysqli_connect('localhost', 'root', '', 'sign-up');
+                        $query = "SELECT * FROM feedbacks WHERE artistname = 'Yurieem'";
+                        $query_run = mysqli_query($db,$query);
+                        $ave = "SELECT CAST(AVG(rating) AS DECIMAL(10,1)) FROM feedbacks WHERE artistname = 'Yurieem'";
+                        $result = $db->query($ave);
+                        while($rows = mysqli_fetch_array($result)){
+                            if ($rows['CAST(AVG(rating) AS DECIMAL(10,1))']>0){
+                                ?>
+                                <div class="ave-container">
+                                    <p class="average"><b><?=$rows['CAST(AVG(rating) AS DECIMAL(10,1))']?></b></p>
+                                    <p class="average">out of<br>5</p>
+                                </div>
+                                <?php
+                            }
+                            else{
+                                ?>
+                                <div class="ave-container">
+                                    <p class="average"><b>0.0</b></p>
+                                    <p class="average">out of<br>5</p>
+                                </div>
+                                <?php
+                            }
+                        }
+                        if (mysqli_num_rows($query_run)>0){
+                            foreach ($query_run as $row){
+                                ?>
+                                <div class="details-card">
+                                    <p class="commission-h3"><?=$row['commissionername']?></p><br><br>
+                                    <p class="commission-h3"><?=$row['date']?></p><br><br>
+                                    <p class="grade"><b><?=$row['rating']?> out of 5</b></p><br><br>
+                                    <p class="commission-h3"><?=$row['feedback']?></p>
+                                </div>
+                                <?php
+                            }
+                        }
+                        ?>
                     </div>  
                 </section>
             </section> 

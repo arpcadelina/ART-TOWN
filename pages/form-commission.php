@@ -12,7 +12,7 @@
             <div class="form-commission-div">
                 <header class="ftitle"> Commission Form</header>
     
-                <form class="commission">
+                <form class="commission" method="post" enctype="multipart/form-data" id="commission-form">
                     <label for="art-style"> Artwork </label><br>
                         <select name = "dropdown">
 						    <option value = "art-dg1" selected>Digital Art - Group</option>
@@ -31,19 +31,22 @@
                             <option value = "art-pt3">Painting - Portrait</option>
 					    </select><br><br>
                     <label for="name"> Name </label><br>
-                        <input type="text" id="name" /><br><br>
+                        <input type="text" id="name" name="clientName" value="<?php echo $clientName; ?>" /><br><br>
     
                     <label for="email"> Email </label><br>
-                        <input type="email" id="email" /><br><br>
+                        <input type="email" id="email" name="clientEmail" value="<?php echo $clientEmail; ?>" /><br><br>
     
                     <label for="contact"> Contact Number </label><br>
-                        <input type="text" id="contact" /><br><br>
+                        <input type="text" id="contact" name="contactNumber" value="<?php echo $contactNumber; ?>" /><br><br>
     
                     <label for="address"> Address </label><br>
-                        <input type="text" id="address"/><br><br>
+                        <input type="text" id="address" name="address" value="<?php echo $address; ?>"/><br><br>
     
                     <label for="details"> Additional Details </label><br>
-                        <textarea> </textarea><br><br>
+                        <textarea id="details" name="details" value="<?php echo $details; ?>"> </textarea><br><br>
+			
+			<a href="3commissionlist.php"><button class="log-in-btn" id="commission-form" name="add_commission" type="submit"><b> Submit </b></button></a>
+                	<a href="2artworklist.php"><button class="log-in-btn"><b> Back</button></b></a>
                 </form>
             </div>
             <div class="form-upload-div">
@@ -51,8 +54,6 @@
                 <div class="preview" id = "preview">
                     <img src="" alt= "Image Preview" id = "image-preview">
                 </div>
-                <a href="3commissionlist.php"><button class="log-in-btn"><b> Submit </b></button></a>
-                <a href="2artworklist.php"><button class="log-in-btn"><b> Back</button></b></a>
             </div>
             <script>
                 const imagefile = document.getElementById("file-upload");

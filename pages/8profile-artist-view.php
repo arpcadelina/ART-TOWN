@@ -1,3 +1,10 @@
+<?php 
+
+    // File Path might change
+    include('C:\xampp\htdocs\ART-TOWN-main\scripts\session.php');
+    include('C:\xampp\htdocs\ART-TOWN-main\scripts\notification.php');
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,7 +17,7 @@
     <body class = "overflow">
         <section class="profile2">
                 <img class="logo2" src = "../Other/logo.png">
-                <a href="../index.php"><button class="profile-sign"><b> Log Out </b></button></a>
+                <a href="../index.php?logout=1"><button class="profile-sign"><b>Log Out</b></button></a>
                 <div class = "profile-container">
                     <div class = "profile-pic">
                         <img src="../DP/1.png" class="artist-pic"/>

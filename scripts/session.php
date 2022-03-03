@@ -14,7 +14,7 @@
 
 
         session_destroy();
-        unset($_SESSION['email']);
-        header("location: index.php");
+        unset($_SESSION['success']);
+        //header("location: index.php");
     }
 ?>

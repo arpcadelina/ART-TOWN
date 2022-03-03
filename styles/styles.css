@@ -863,24 +863,6 @@
         float: left;
     }
 
-    .label-left {
-        float: left;
-        font-family: 'Roboto','sans serif';    
-        font-size: 20px;    
-        color: white;    
-        margin:20px;
-        margin-left: 50px;     
-    }
-
-    .label-right {
-        float: right;
-        font-family: 'Roboto','sans serif';    
-        font-size: 20px;    
-        color: white;    
-        margin:20px;
-        margin-right: 220px;     
-    }
-
         /* Button Rating */
 
         .button-div {

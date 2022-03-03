@@ -19,13 +19,12 @@
             <div class="feedback-div">
                 <header class="ftitle"> Feedback Form </header>
                 <form class="feedback">
-		        <?php
-                        
-                            //Include error.php file in case there's a similar email and full name
-                            //File path might change
-                            include('C:\xampp\htdocs\ART-TOWN-main\scripts\errors.php');
-                        ?> 	
-                    <label for="art-style"> Artwork </label><br>
+		            <?php
+                        //Include error.php file in case there's a similar email and full name
+                        //File path might change
+                        include('C:\xampp\htdocs\ART-TOWN-main\scripts\errors.php');
+                    ?> 	
+                    <label for="art-style"> Artist </label><br><br>
                         <select id="dropdown" name="artistName" value="<?php echo $artistName; ?>">
 						    <option value = "artist-1" selected>Mcleinarts</option>
 						    <option value = "artist-2">Kapebeansis</option>
@@ -35,28 +34,20 @@
 						    <option value = "artist-6">Art of Ran</option>
 						    <option value = "artist-7">Yurieem</option>
 					    </select><br><br>
-                    <label for="name"> Name </label><br>
+                    <label for="name"> Name </label><br><br>
                         <input type="text" id="name" name="commissionerName" value="<?php echo $commissionerName; ?>"/><br><br>
 
-                    <label for="rate"> How did your artist do? Rate the art. </label>
-                        <div>
-                            <div class="label-div">
-                                <p class="label-left"> Poor </p>
-                                <p class="label-right"> Excellent </p>
-                            </div><br>
-                            <div class="button-div">
-                                <button class="button-rating"> 1 </button><!---->
-                                <button class="button-rating"> 2 </button><!---->
-                                <button class="button-rating"> 3 </button><!---->
-                                <button class="button-rating"> 4 </button><!---->
-                                <button class="button-rating"> 5 </button><!---->
-                            </div>
-                        </div><br>
-
-                    <label for="feedback-details"> Please share your feedback: </label><br>
-                    <textarea name="feedbackDetails" value="<?php echo $feedbackDetails; ?>"> </textarea><br>
-			
-		    <a href="3commissionlist.php"><button class="long-btn"><b> Submit </b></button></a>
+                    <label for="rate"> How did your artist do? Rate the art. </label><br><br>
+                        <select>
+						    <option value = "5" selected>5 ✮✮✮✮✮</option>
+                            <option value = "4">4 ✮✮✮✮</option>
+                            <option value = "3">3 ✮✮✮</option>
+                            <option value = "2">2 ✮✮</option>
+                            <option value = "1">1 ✮</option> 
+                        </select><br><br>
+                    <label for="feedback-details"> Please share your feedback: </label><br><br>
+                        <textarea name="feedbackDetails" value="<?php echo $feedbackDetails; ?>"> </textarea><br><br>
+		            <a href="3commissionlist.php"><button class="long-btn"><b> Submit </b></button></a>
                 </form>
             </div>
             <div class="feedback-img">

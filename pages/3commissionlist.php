@@ -1,3 +1,10 @@
+<?php 
+
+    // File Path might change
+    include('C:\xampp\htdocs\ART-TOWN-main\scripts\session.php');
+    include('C:\xampp\htdocs\ART-TOWN-main\scripts\notification.php');
+?>
+
 <!DOCTYPE html>
 <html>
     <head>

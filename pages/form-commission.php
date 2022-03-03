@@ -1,3 +1,10 @@
+<?php
+
+    include('C:\xampp\htdocs\ART-TOWN-main\scripts\session.php');
+    include('C:\xampp\htdocs\ART-TOWN-main\scripts\notification.php');
+    include('C:\xampp\htdocs\ART-TOWN-main\scripts\commission-query.php');
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,7 +21,7 @@
     
                 <form class="commission" method="post" enctype="multipart/form-data" id="commission-form">
                     <label for="art-style"> Artwork </label><br>
-                        <select name = "dropdown">
+                        <select id="dropdown" name="artworkName" value="<?php echo $artworkName; ?>">
 						    <option value = "art-dg1" selected>Digital Art - Group</option>
 						    <option value = "art-dg2">Digital Art - Portrait</option>
 						    <option value = "art-dg3">Digital Art - Chibi</option>
@@ -29,7 +36,7 @@
                             <option value = "art-pt1">Painting - Scenery</option>
                             <option value = "art-pt2">Painting - Fur Babies</option>
                             <option value = "art-pt3">Painting - Portrait</option>
-					    </select><br><br>
+			</select><br><br>
                     <label for="name"> Name </label><br>
                         <input type="text" id="name" name="clientName" value="<?php echo $clientName; ?>" /><br><br>
     
@@ -50,7 +57,7 @@
                 </form>
             </div>
             <div class="form-upload-div">
-                <input id="file-upload" type="file"/>
+                <input id="file-upload" type="file" name="upload" accept="image/" value="<?php echo $upload; ?>"/>
                 <div class="preview" id = "preview">
                     <img src="" alt= "Image Preview" id = "image-preview">
                 </div>

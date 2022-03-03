@@ -22,9 +22,9 @@
                 <div class="nav-container"
                 <ul>
                     <li class="menu"><a href="index.php"> Home </a></li>
-                    <li class="menu"><a href="html/1artistlist.html"> Artists </a></li>
-                    <li class="menu"><a href="html/2artworklist.html"> Artworks </a></li>
-                    <li class="menu"><a href="html/3commissionlist.html"> Commission </a></li>   
+                    <li class="menu"><a href="pages/1artistlist.php"> Artists </a></li>
+                    <li class="menu"><a href="pages/2artworklist.php"> Artworks </a></li>
+                    <li class="menu"><a href="pages/3commissionlist.php"> Commission </a></li>   
                 </ul>
                 </div>
                 <li class="sign-button"><a href="index.php#sign-in" id="log-out"><button id="sign-button"><b> Sign In </b></button></a></li>
@@ -35,19 +35,19 @@
         <section class="featured">
             <header class="fttitle"> Featured Artworks </header>
             <div class = "featured-container">
-            <a href="html/collage-view.html#dg6"><figure class="featured-figure">
+            <a href="pages/collage-view.php#dg6"><figure class="featured-figure">
                 <img src="Art/DG6.png"
                     class="featured-img"/>
                 <h6 class="featured-h6">Original Character</h6>
                 <figcaption></figcaption>
             </figure></a>
-            <a href="html/collage-view.html#dr2"><figure class="featured-figure">
+            <a href="pages/collage-view.php#dr2"><figure class="featured-figure">
                 <img src="Art/DR2.png"
                     class="featured-img"/>
                 <h6 class="featured-h6">Fur Babies</h6>
                 <figcaption></figcaption>
             </figure></a>
-            <a href="html/collage-view.html#pt3"><figure class="featured-figure">
+            <a href="pages/collage-view.php#pt3"><figure class="featured-figure">
                 <img src="Art/PT3.png"
                     class="featured-img"/>
                 <h6 class="featured-h6">Portrait</h6>
@@ -83,12 +83,12 @@
         <!-- Sign In Section-->
         <section class="sign-in" id = sign-in>
             <div class="sign-div">
-                <a href="html/4sign-in-artist.php"><button class="home-button-sign"><b> Log In </b></button></a><br>
-                <a href="html/7how-to-apply.html"><button class="home-button-apply"><b> How To Apply </b></button></a>
+                <a href="pages/4sign-in-artist.php"><button class="home-button-sign"><b> Log In </b></button></a><br>
+                <a href="pages/7how-to-apply.php"><button class="home-button-apply"><b> How To Apply </b></button></a>
             </div>
             <div class="sign-div">
-                <a href="html/5sign-in-commissioner.php"><button class="home-button-sign"><b> Log In </b></button></a><br>
-                <a href="html/6sign-up-commissioner.php"><button class="home-button-apply"><b> Sign Up </b></button></a>
+                <a href="pages/5sign-in-commissioner.php"><button class="home-button-sign"><b> Log In </b></button></a><br>
+                <a href="pages/6sign-up-commissioner.php"><button class="home-button-apply"><b> Sign Up </b></button></a>
             </div>
         </section>
     </body>

@@ -1,3 +1,10 @@
+<?php
+    
+    include('C:\xampp\htdocs\ART-TOWN-main\scripts\session.php');
+    include('C:\xampp\htdocs\ART-TOWN-main\scripts\notification.php');
+    include('C:\xampp\htdocs\ART-TOWN-main\scripts\feedback_query.php');
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,8 +19,14 @@
             <div class="feedback-div">
                 <header class="ftitle"> Feedback Form </header>
                 <form class="feedback">
+		        <?php
+                        
+                            //Include error.php file in case there's a similar email and full name
+                            //File path might change
+                            include('C:\xampp\htdocs\ART-TOWN-main\scripts\errors.php');
+                        ?> 	
                     <label for="art-style"> Artwork </label><br>
-                        <select name = "dropdown">
+                        <select id="dropdown" name="artistName" value="<?php echo $artistName; ?>">
 						    <option value = "artist-1" selected>Mcleinarts</option>
 						    <option value = "artist-2">Kapebeansis</option>
 						    <option value = "artist-3">Chachiearts</option>
@@ -23,7 +36,7 @@
 						    <option value = "artist-7">Yurieem</option>
 					    </select><br><br>
                     <label for="name"> Name </label><br>
-                        <input type="text" id="name"/><br><br>
+                        <input type="text" id="name" name="commissionerName" value="<?php echo $commissionerName; ?>"/><br><br>
 
                     <label for="rate"> How did your artist do? Rate the art. </label>
                         <div>
@@ -41,9 +54,10 @@
                         </div><br>
 
                     <label for="feedback-details"> Please share your feedback: </label><br>
-                    <textarea> </textarea><br>
+                    <textarea name="feedbackDetails" value="<?php echo $feedbackDetails; ?>"> </textarea><br>
+			
+		    <a href="3commissionlist.php"><button class="long-btn"><b> Submit </b></button></a>
                 </form>
-                    <a href="3commissionlist.php"><button class="long-btn"><b> Submit </b></button></a>
             </div>
             <div class="feedback-img">
 

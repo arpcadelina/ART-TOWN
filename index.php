@@ -115,11 +115,8 @@
       <script type="text/javascript" >
 
         var status = "<?php echo $status; ?>";
-        var success = "<?php echo $success; ?>";
           
         function changeButton() {
-
-            window.alert(success);
             
             if (status = 1) {
 

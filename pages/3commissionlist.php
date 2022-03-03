@@ -34,7 +34,7 @@
                         <p class="commission-h3"><b> Art Title </b></p><br><br>
                         <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
                     </div>
-                    <a href="../html/form-feedback.php"><button><b> Received </b></button></a>
+                    <a href="form-feedback.php"><button><b> Received </b></button></a>
 
                     <div class="commission-card">
                         <p class="commission-h3">Name</p><br><br>
@@ -42,7 +42,7 @@
                         <p class="commission-h3"><b> Art Title </b></p><br><br>
                         <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
                     </div>
-                    <a href="../html/form-feedback.php"><button><b> Received </b></button></a>
+                    <a href="form-feedback.php"><button><b> Received </b></button></a>
 
                     <div class="commission-card">
                         <p class="commission-h3">Name</p><br><br>
@@ -50,7 +50,7 @@
                         <p class="commission-h3"><b> Art Title </b></p><br><br>
                         <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
                     </div>
-                    <a href="../html/form-feedback.php"><button><b> Received </b></button></a>
+                    <a href="form-feedback.php"><button><b> Received </b></button></a>
 
                     <div class="commission-card">
                         <p class="commission-h3">Name</p><br><br>
@@ -58,7 +58,7 @@
                         <p class="commission-h3"><b> Art Title </b></p><br><br>
                         <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
                     </div>
-                    <a href="../html/form-feedback.php"><button><b> Received </b></button></a>
+                    <a href="form-feedback.php"><button><b> Received </b></button></a>
                 </div>
             </div>
         </section>

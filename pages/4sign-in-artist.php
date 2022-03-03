@@ -38,7 +38,7 @@
                 
                 <!--Might consider removing the anchor tag, use the button as submit type for form submission-->
                 <!--Button should be inside the form-->
-                <a href="8profile-artist-view.php"><button class="log-in-btn" type="submit" name="login_user"><b> Sign-In </b></button></a>
+                <a href="8profile-artist-view.php"><button class="log-in-btn" type="submit" name="login_artist"><b> Sign-In </b></button></a>
             </form>
             <p class="account-prompt">Don't have an account? <a href="7how-to-apply.php"> Apply Now! </a></p>
         </div>

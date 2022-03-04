@@ -58,9 +58,9 @@
                             <img src="" alt= "Image Preview" id = "image-preview">
                         </div>
                             <a href="3commissionlist.php"><button class="log-in-btn" id="commission-form" name="add_commission" type="submit"><b> Submit </b></button></a>
-                	        <a href="2artworklist.php"><button class="log-in-btn"><b> Back</button></b></a>
                     </div>
-                </form>        
+                </form>
+		<button class="log-in-btn" id="commission-form" onclick="history.back()"><b> Back </b></button>
             <script>
                 const imagefile = document.getElementById("file-upload");
                 const preview = document.getElementById("preview");

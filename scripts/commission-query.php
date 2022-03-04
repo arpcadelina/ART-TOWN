@@ -27,7 +27,50 @@
         $target = '../uploaded/'. basename( $_FILES["upload"]["name"]);
         move_uploaded_file($_FILES['upload']['tmp_name'], $target);
         
+        //Add Artist Name depending on Artwork Name
+        $mclein = array("art-pt1", "art-dr1");
+        $kapebeansis = array("art-dr2", "art-pt2");
+        $chachiearts = array("art-dr3", "art-dr4");
+        $aeonix = array("art-dg1", "art-dg2");
+        $salmonfishuu = array("art-dg3","art-dg4", "art-dr5");
+        $artofran = array("art-dg5", "art-dg6"); 
 
+         //Use array_search, it returns an index if artworkname is inside the artistname arrays
+        if (array_search($artworkName, $mclein, false) !== false) {
+
+            $artistName = "mcleinarts@gmail.com";
+        }     
+
+            elseif (array_search($artworkName, $kapebeansis, false) !== false) {
+
+                $artistName = "kapebeansis@gmail.com";
+            }
+
+            elseif (array_search($artworkName, $chachiearts, false) !== false) {
+
+                $artistName = "chachiearts@gmail.com";
+            }
+
+            elseif (array_search($artworkName, $aeonix, false) !== false) {
+
+                $artistName = "aeonix@gmail.com";
+            }
+
+            elseif (array_search($artworkName, $salmonfishuu, false) !== false) {
+
+                $artistName = "salmonfishuu@gmail.com";
+            }
+
+            elseif (array_search($artworkName, $artofran, false) !== false) {
+
+                $artistName = "artofran@gmail.com";
+            }
+
+                else {
+
+                    $artistName = "yurieem@gmail.com";
+                }
+        
             //Check if form inputs are empty
             
             if (empty($artworkName)) { array_push($errors, "Artwork Name is required"); }
@@ -40,8 +83,8 @@
             
                 if (count($errors) === 0) {
 
-                    $query_commission = "INSERT INTO commissions (artworkname, clientname, clientemail, contactnumber, address, details, upload, status) 
-                    VALUES ('$artworkName', '$clientName', '$clientEmail', '$contactNumber', '$address', '$details', '$upload', '$status')";
+                    $query_commission = "INSERT INTO commissions (artworkname, clientname, clientemail, contactnumber, address, details, upload, status, artistname) 
+                    VALUES ('$artworkName', '$clientName', '$clientEmail', '$contactNumber', '$address', '$details', '$upload', '$status', '$artistname')";
 
                     
 

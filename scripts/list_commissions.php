@@ -4,7 +4,7 @@
 
     $db = $db = mysqli_connect('localhost', 'root', '', 'sign-up');
 
-    $check_email = "SELECT * FROM commissions WHERE clientemail='$email'";
+    $check_email = "SELECT * FROM commissions WHERE clientemail='$email' && status = 'on going' or status = 'done'";
     $display_commissions = mysqli_query ($db, $check_email);    
 
         while ($commissions = mysqli_fetch_assoc($display_commissions)) {

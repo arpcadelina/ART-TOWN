@@ -19,6 +19,42 @@
         $feedbackDetails    = mysqli_real_escape_string($db, $_POST['feedbackDetails']);
         $ratingNum          = mysqli_real_escape_string($db, $_POST['ratingNum']);
 
+          //Use array_search, it returns an index if artworkname is inside the artistname arrays
+         if ($artistName === 'Mcleinarts') {
+ 
+             $artistEmail = "mcleinarts@gmail.com";
+         }     
+ 
+             elseif ($artistName === 'Kapebeansis') {
+ 
+                 $artistEmail = "kapebeansis@gmail.com";
+             }
+ 
+             elseif ($artistName === 'Chachiearts') {
+ 
+                 $artistEmail = "chachiearts@gmail.com";
+             }
+ 
+             elseif ($artistName === 'Aeonix') {
+ 
+                 $artistEmail = "aeonix@gmail.com";
+             }
+ 
+             elseif ($artistName === 'Salmonfishuu') {
+ 
+                 $artistEmail = "salmonfishuu@gmail.com";
+             }
+ 
+             elseif ($artistName === 'Yurieem') {
+ 
+                 $artistEmail = "yurieem@gmail.com";
+             }
+ 
+                 else {
+ 
+                    $artistEmail = "artofran@gmail.com";
+                 }
+
         if (empty($artistName)) { array_push($errors, "Artist Name is required"); }
         if (empty($commissionerName)) { array_push($errors, "Commissioner Name is required"); }
         if (empty($feedbackDetails)) { array_push($errors, "Feedback Details is required"); }
@@ -28,8 +64,8 @@
             
             if (count($errors) === 0) {
 
-                $query_feedback = "INSERT INTO feedbacks (artistname, commissionername, rating, feedback) 
-                VALUES ('$artistName', '$commissionerName', '$ratingNum', '$feedbackDetails')";
+                $query_feedback = "INSERT INTO feedbacks (artistname, commissionername, rating, feedback, artistemail) 
+                VALUES ('$artistName', '$commissionerName', '$ratingNum', '$feedbackDetails', $artistEmail)";
 
                 mysqli_query($db, $query_feedback);
                 $_SESSION['submit-feedback'] = "Your feedback was submitted.";

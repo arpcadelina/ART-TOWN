@@ -12,19 +12,20 @@
 
         $query_check_user = "SELECT * FROM users WHERE email='$email' LIMIT 1";
         $result_check_user = mysqli_query($db, $query_check_user);
-        $check_user = mysqli_fetch_assoc($result_check_user);
 
-        if ($check_user) {
-
-            if ($check_user['email'] === $email) {
+        if (mysqli_num_rows($result_check_user) == 1) {
 
                 
-            }
         }
 
         else {
 
-            header('location: 5sign-in-commissioner.php');
+            header('location: ../index.php#sign-in');
         }
+    }
+
+    else {
+
+        header('location: ../index.php#sign-in');
     }
 ?>

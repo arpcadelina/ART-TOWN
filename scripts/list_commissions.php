@@ -8,15 +8,18 @@
     $display_commissions = mysqli_query ($db, $check_email);    
 
         while ($commissions = mysqli_fetch_assoc($display_commissions)) {
-
-            print '<form method="post">';
-                print '<div class="commission-card">';
-                    print '<p class="commission-h3">' . $commissions['artistname'] . '</p><br><br>';
-                    print '<p class="commission-h3">' . $commissions['date_submit'] . '</p><br><br>';
-                    print '<p class="commission-h3">' . $commissions['artworkname'] .  '</b></p><br><br>';
-                    print '<p class="commission-h3">' . $commissions['details'] . '</p>';
-                print '</div>';
-                print '<a href="form-feedback.php"><button><b> Received </b></button></a>';
-            print '</form>';
+        ?>
+        <div class="commission-row">
+            <div class="commission-card">
+                <p class="commission-h3"><?=$commissions['clientname']?></p><br><br>
+                <p class="commission-h3"> <?=$commissions['date']?> </p><br><br>
+                <p class="commission-h3"><b> <?=$commissions['artworkname']?> </b></p><br><br>
+                <p class="commission-h3"><?=$commissions['details']?></p>
+            </div>
+            <div class="commission-button">
+                <a href="8profile-artist-view.php?received=<?php echo $commissions['id']; ?>" class = "button1"><b>Received</b></a><br>
+            </div>
+        </div>
+        <?php
         }
 ?>

@@ -4,6 +4,7 @@
     include('C:\xampp\htdocs\ART-TOWN-main\scripts\session.php');
     include('C:\xampp\htdocs\ART-TOWN-main\scripts\notification.php');
     include('C:\xampp\htdocs\ART-TOWN-main\scripts\restrict-access.php');
+    include('C:\xampp\htdocs\ART-TOWN-main\scripts\process.php');
 ?>
 
 <!DOCTYPE html>

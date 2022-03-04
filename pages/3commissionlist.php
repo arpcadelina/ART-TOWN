@@ -36,41 +36,10 @@
             <div class="border-container">
                 <header class="ptitle"> Commission List </header>
                 <div class="commission-row">
-                    <div class="commission-card">
-                        <p class="commission-h3">Name</p><br><br>
-                        <p class="commission-h3"> Date </p><br><br>
-                        <p class="commission-h3"><b> Art Title </b></p><br><br>
-                        <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                    </div>
-                    <a href="form-feedback.php"><button><b> Received </b></button></a>
+                <?php
 
-                    <div class="commission-card">
-                        <p class="commission-h3">Name</p><br><br>
-                        <p class="commission-h3"> Date </p><br><br>
-                        <p class="commission-h3"><b> Art Title </b></p><br><br>
-                        <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                    </div>
-                    <a href="form-feedback.php"><button><b> Received </b></button></a>
-
-                    <div class="commission-card">
-                        <p class="commission-h3">Name</p><br><br>
-                        <p class="commission-h3"> Date </p><br><br>
-                        <p class="commission-h3"><b> Art Title </b></p><br><br>
-                        <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                    </div>
-                    <a href="form-feedback.php"><button><b> Received </b></button></a>
-
-                    <div class="commission-card">
-                        <p class="commission-h3">Name</p><br><br>
-                        <p class="commission-h3"> Date </p><br><br>
-                        <p class="commission-h3"><b> Art Title </b></p><br><br>
-                        <p class="commission-h3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas veritatis nihil voluptates repudiandae possimus rem quibusdam, laudantium repellendus tenetur blanditiis, labore iure in veniam nulla tempora dolorum sit deleniti?</p>
-                    </div>
-                    <a href="form-feedback.php"><button><b> Received </b></button></a>
-                </div>
-            </div>
-        </section>
-
+                    include('C:\xampp\htdocs\ART-TOWN-main\scripts\list_commissions.php');
+                ?>
         </section>
     </body>
     <footer>

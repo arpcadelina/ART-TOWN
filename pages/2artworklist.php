@@ -159,22 +159,14 @@
 
         function changeButton() {
 
-            window.alert(status);
+                if (status = 1) {
 
-            if (status = 1) {
+                    var btn = document.getElementById("sign-button");
+                    var anchor = document.getElementById("log-out");
 
-                var btn = document.getElementById("sign-button");
-                var anchor = document.getElementById("log-out");
-
-                btn.textContent = "Log Out";
-                anchor.setAttribute("href", "../html/4sign-in-artist.php");
-            }
-
-                else {
-
-                    window.alert("nani");
+                    btn.textContent = "Log Out";
+                    anchor.setAttribute("href", "../html/4sign-in-artist.php");
                 }
-
             }
 
             changeButton();
